@@ -76,7 +76,9 @@ export default function LandingPage() {
                 Devgen is a Chrome extension that lets you chat with your Github
                 repository side by side.
               </Typography>
-              <AspectRatio sx={{ width: "70%" }} variant="plain">
+              <AspectRatio sx={(theme)=> ({
+              width: { xs: '100%', md: '80%' },
+              })} variant="plain">
                 <img src="./first_look.png" />
               </AspectRatio>
             <Stack
