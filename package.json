@@ -1,0 +1,52 @@
+{
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/joy": "latest",
+    "@mui/material": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/uuid": "^9.0.7",
+    "@uiw/react-markdown-preview": "^5.0.6",
+    "axios": "^1.6.5",
+    "file-icons-js": "^1.1.0",
+    "i18next": "^23.7.13",
+    "mermaid": "^10.6.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-i18next": "^14.0.0",
+    "react-icons": "^4.12.0",
+    "react-markdown": "^9.0.1",
+    "react-player": "^2.14.1",
+    "react-router-dom": "^6.21.1",
+    "react-use": "^17.4.2",
+    "rehype-rewrite": "^4.0.2",
+    "uuid": "^9.0.1"
+  },
+  "description": "xcopilot",
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "react-scripts": "latest",
+    "shx": "^0.3.4",
+    "typescript": "^5.0.4"
+  },
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "format": "prettier --write src"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
