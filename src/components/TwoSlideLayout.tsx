@@ -16,12 +16,12 @@ export default function TwoSidedLayout({
         flexDirection: "column",
         alignItems: "center",
         py: 5,
-        width: '100%',
-        [theme.breakpoints.up('md')]: {
+        width: "100%",
+        [theme.breakpoints.up("md")]: {
           flexDirection: "row",
           gap: 6,
         },
-        px: 0
+        px: 0,
       })}
     >
       <Box
@@ -33,7 +33,7 @@ export default function TwoSidedLayout({
           maxWidth: "50ch",
           textAlign: "center",
           flexShrink: 999,
-          [theme.breakpoints.up('md')]: {
+          [theme.breakpoints.up("md")]: {
             minWidth: 420,
             alignItems: "flex-start",
             textAlign: "initial",
@@ -49,7 +49,7 @@ export default function TwoSidedLayout({
         variant="outlined"
         sx={(theme) => ({
           alignSelf: "stretch",
-          [theme.breakpoints.up('md')]: {
+          [theme.breakpoints.up("md")]: {
             alignSelf: "initial",
             flexGrow: 1,
             "--AspectRatio-maxHeight": "520px",
