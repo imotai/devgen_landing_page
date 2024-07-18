@@ -18,7 +18,7 @@ function ColorSchemeToggle(props: IconButtonProps) {
     <IconButton
       aria-label="toggle light/dark mode"
       size="sm"
-      variant="outlined"
+      variant="plain"
       disabled={!mounted}
       onClick={(event) => {
         setMode(mode === "light" ? "dark" : "light");

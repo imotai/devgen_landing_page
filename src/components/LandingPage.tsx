@@ -68,14 +68,9 @@ export default function LandingPage() {
                 fontWeight="xl"
                 fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
               >
-                <Typography color="primary" sx={{
-                  background:
-                  'linear-gradient(-30deg, var(--joy-palette-primary-400), var(--joy-palette-primary-700))',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                }}>Devgen</Typography>
+                <Typography>Devgen</Typography>
                 <Typography color="neutral">:</Typography>
-                Boost your GitHub productivity with AI-powered assistance
+                <Typography color="primary">Supercharge</Typography> your GitHub workflow with context awared AI assistance
               </Typography>
               <Typography
                 fontSize="lg"
@@ -87,7 +82,7 @@ export default function LandingPage() {
               </Typography>
               <AspectRatio
                 sx={(theme) => ({
-                  width: { xs: "100%", md: "80%" },
+                  width: { xs: "100%", md: "80%", lg: "60%" },
                 })}
                 variant="plain"
               >
@@ -100,8 +95,8 @@ export default function LandingPage() {
                 spacing={2}
                 sx={{ mx: "auto", p: 2 }}
               >
-                <Button variant="solid" color="primary" size="lg">
-                  Join the waitlist
+                <Button variant="solid" color="primary" size="lg" >
+                  Get Early Access
                 </Button>
               </Stack>
             </Stack>
