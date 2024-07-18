@@ -6,7 +6,6 @@ import Typography from "@mui/joy/Typography";
 import Stack from "@mui/joy/Stack";
 import { useAsyncFn } from "react-use";
 import ArrowForward from "@mui/icons-material/ArrowForward";
-import Chip from "@mui/joy/Chip";
 import PlayVideo from "./PlayVideo";
 import AspectRatio from "@mui/joy/AspectRatio";
 import HeaderMenu from "./HeaderMenu";
@@ -70,7 +69,7 @@ export default function LandingPage() {
               >
                 <Typography>Devgen</Typography>
                 <Typography color="neutral">:</Typography>
-                <Typography color="primary">Supercharge</Typography> your GitHub workflow with context awared AI assistance
+                <Typography color="primary">Supercharge</Typography> your GitHub workflow with context aware AI assistance
               </Typography>
               <Typography
                 fontSize="lg"
@@ -82,7 +81,7 @@ export default function LandingPage() {
               </Typography>
               <AspectRatio
                 sx={(theme) => ({
-                  width: { xs: "100%", md: "80%", lg: "60%" },
+                  width: { xs: "100%", md: "80%"},
                 })}
                 variant="plain"
               >
