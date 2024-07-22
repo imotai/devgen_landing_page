@@ -112,37 +112,40 @@ export default function LandingPage() {
             </Stack>
             <Stack direction="column" spacing={1} sx={{ mx: "auto", mt: 10 }}>
               <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" sx={{}}>
-                  In-context Explanation
+                <Typography level="h1" fontWeight="xl" 
+                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
+                >
+                  In-Context Explanation with Linked References
+
                 </Typography>
                 <Typography
-                  fontSize="lg"
+                  fontSize="xl"
                   textColor="text.secondary"
                   lineHeight="lg"
                 >
-                  Select any text, and Devgen will search the current GitHub
-                  repository to generate a tailored explanation.
+                  Select any text, and Devgen will search the current GitHub repository to generate a tailored explanation, complete with code breakdowns and technology insights.
+                  Devgen can be used for the following purposes:
                 </Typography>
                 <List marker="disc">
                   <ListItem>
-                    <Typography fontSize="xl">Code Explanation</Typography>
-                    <Typography fontSize="md">
-                      Select a code snippet to receive a detailed breakdown of
-                      its functionality
+                    <Typography fontSize="xl" level="title-lg">Code Explanation</Typography>
+                    <Typography fontSize="xl">
+                      Select a code snippet to receive a detailed breakdown of its functionality, including linked code references, relevant issues, and pull requests.
                     </Typography>
                   </ListItem>
                   <ListItem>
-                    <Typography fontSize="xl">Feature Explanation</Typography>
-                    <Typography fontSize="md">
-                      Select a feature description to get an in-depth
-                      explanation of its purpose and implementation
+                    <Typography fontSize="xl" level="title-lg">Technology Explanation</Typography>
+                    <Typography fontSize="xl">
+                      Select a technology description to get an in-depth explanation of its purpose, implementation, and usage within this repository
                     </Typography>
                   </ListItem>
                 </List>
               </TwoSidedLayout>
               <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" sx={{}}>
-                  In-context Task Solving
+                <Typography level="h1" fontWeight="xl" sx={{}}
+                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
+                >
+                  In-Context Problem Solving
                 </Typography>
                 <Typography
                   fontSize="lg"
@@ -155,25 +158,34 @@ export default function LandingPage() {
                 </Typography>
                 <List marker="disc">
                   <ListItem>
-                    <Typography fontSize="xl">Custom Usage Examples</Typography>
+                    <Typography fontSize="xl">Tailored Usage Examples</Typography>
                     <Typography fontSize="md">
-                      DevGen creates personalized usage examples based on your
-                      specific requirements.
+                      DevGen crafts personalized usage examples to match your specific requirements
                     </Typography>
                   </ListItem>
                   <ListItem>
                     <Typography fontSize="xl">
-                      Issue Resolution Planning
+                      Strategic Issue Resolution
                     </Typography>
                     <Typography fontSize="md">
-                      Select an issue, and Devgen will generate a comprehensive
-                      plan to address and resolve it.
+                      Choose an issue, and DevGen will develop a detailed plan to address and resolve it effectively
                     </Typography>
                   </ListItem>
                 </List>
+                <Typography
+                  fontSize="lg"
+                  textColor="text.secondary"
+                  lineHeight="lg"
+                >
+                  Simply send a question to Devgen, and it will search the
+                  current GitHub repository to generate a tailored solution for
+                  you.
+                </Typography>
               </TwoSidedLayout>
               <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" sx={{}}>
+                <Typography level="h1" fontWeight="xl" sx={{}}
+                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
+                >
                   On-demand Code Index
                 </Typography>
                 <Typography

@@ -26,6 +26,7 @@ export default function TwoSidedLayout({
           flexDirection: "column",
           width: { xs: "100%", md: "50%" },
           mx: "auto",
+          gap: 1
         })}
       >
         {children}
