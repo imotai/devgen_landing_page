@@ -10,9 +10,9 @@ const customTheme = extendTheme({
   typography: {
     h1: {
       background:
-        'linear-gradient(-30deg, var(--joy-palette-primary-700), var(--joy-palette-primary-400))',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
+        "linear-gradient(-30deg, var(--joy-palette-primary-700), var(--joy-palette-primary-400))",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
     },
   },
 });

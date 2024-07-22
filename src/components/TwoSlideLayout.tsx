@@ -1,46 +1,31 @@
 import * as React from "react";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
-import Container from "@mui/joy/Container";
-import { typographyClasses } from "@mui/joy/Typography";
 
 export default function TwoSidedLayout({
   children,
   reversed,
 }: React.PropsWithChildren<{ reversed?: boolean }>) {
   return (
-    <Container
+    <Box
       sx={(theme) => ({
         position: "relative",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        py: 5,
         width: "100%",
         [theme.breakpoints.up("md")]: {
           flexDirection: "row",
           gap: 6,
         },
-        px: 0,
+        p: 2,
       })}
     >
       <Box
         sx={(theme) => ({
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          gap: "1rem",
-          maxWidth: "50ch",
-          textAlign: "center",
-          flexShrink: 999,
-          [theme.breakpoints.up("md")]: {
-            minWidth: 420,
-            alignItems: "flex-start",
-            textAlign: "initial",
-          },
-          [`& .${typographyClasses.root}`]: {
-            textWrap: "balance",
-          },
+          width: { xs: "100%", md: "50%" },
+          mx: "auto",
         })}
       >
         {children}
@@ -65,6 +50,6 @@ export default function TwoSidedLayout({
           alt=""
         />
       </AspectRatio>
-    </Container>
+    </Box>
   );
 }

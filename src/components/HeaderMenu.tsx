@@ -46,16 +46,16 @@ export default function HeaderMenu() {
           <XCopilotLogo />
           <Stack direction="row" spacing={5}>
             <Link href="/">
-              <Typography level="title-sm">Home</Typography>
+              <Typography level="title-md">Products</Typography>
             </Link>
             <Link
               href="https://diasfd1hq9.feishu.cn/docx/DQcPdvpR9oYLduxTfyjchiUPnfg"
               target="_blank"
             >
-              <Typography level="title-sm">Docs</Typography>
+              <Typography level="title-md">Docs</Typography>
             </Link>
             <Link href="/pricing">
-              <Typography level="title-sm">Pricing</Typography>
+              <Typography level="title-md">Pricing</Typography>
             </Link>
           </Stack>
         </Box>

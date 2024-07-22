@@ -13,6 +13,10 @@ import TwoSidedLayout from "./TwoSlideLayout";
 import Button from "@mui/joy/Button";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
+import { Avatar } from "@mui/joy";
+import { FaChrome } from "react-icons/fa";
+import { FaChevronCircleRight } from "react-icons/fa";
+import { FaUpRightFromSquare } from "react-icons/fa6";
 
 export default function LandingPage() {
   const [openVideo, setOpenVideo] = React.useState<boolean>(false);
@@ -60,7 +64,7 @@ export default function LandingPage() {
               justifyContent="center"
               alignItems="center"
               spacing={1}
-              sx={{ mx: "auto",  mt: 10, textAlign: "center" }}
+              sx={{ mx: "auto", mt: 10, textAlign: "center" }}
             >
               <Typography
                 level="h1"
@@ -69,7 +73,8 @@ export default function LandingPage() {
               >
                 <Typography>Devgen</Typography>
                 <Typography color="neutral">:</Typography>
-                <Typography color="primary">Supercharge</Typography> your GitHub workflow with context aware AI assistance
+                <Typography color="primary">Supercharge</Typography> your GitHub
+                workflow with context aware AI assistance
               </Typography>
               <Typography
                 fontSize="lg"
@@ -79,14 +84,6 @@ export default function LandingPage() {
                 Devgen is a Chrome extension that lets you chat with your Github
                 repository side by side.
               </Typography>
-              <AspectRatio
-                sx={(theme) => ({
-                  width: { xs: "100%", md: "80%"},
-                })}
-                variant="plain"
-              >
-                <img src="./first_look.png" />
-              </AspectRatio>
               <Stack
                 direction="row"
                 justifyContent="center"
@@ -94,52 +91,119 @@ export default function LandingPage() {
                 spacing={2}
                 sx={{ mx: "auto", p: 2 }}
               >
-                <Button variant="solid" color="primary" size="lg" >
-                  Get Early Access
+                <Button
+                  color="primary"
+                  variant="solid"
+                  size="lg"
+                  startDecorator={<FaChrome />}
+                  endDecorator={<FaUpRightFromSquare />}
+                >
+                  Try it for free
                 </Button>
               </Stack>
+              <AspectRatio
+                sx={(theme) => ({
+                  width: { xs: "100%", md: "80%" },
+                })}
+                variant="plain"
+              >
+                <img src="./first_look.png" />
+              </AspectRatio>
             </Stack>
-            <TwoSidedLayout>
-              <Typography level="h2">In-context explanation</Typography>
-              <Typography
-                textColor="text.secondary"
-                lineHeight="lg"
-              >
-                Simply select the desired text, and devgen will generate an
-                explanation based on the surrounding GitHub context.
-              </Typography>
-              <List marker="disc" sx={{ px: 2, py: 2 }}>
-                <ListItem>
-                  For code: Select a specific method or function to receive an
-                  explanation.
-                </ListItem>
-                <ListItem>
-                  For documentation: Highlight key concepts in README files for
-                  detailed clarification.
-                </ListItem>
-                <ListItem>
-                  For issues and pull requests: Select relevant portions to
-                  understand their context and implications.
-                </ListItem>
-              </List>
-            </TwoSidedLayout>
-            <TwoSidedLayout>
-              <Typography level="h2">In-context Problem Solving</Typography>
-              <Typography
-                fontSize="lg"
-                textColor="text.secondary"
-                lineHeight="lg"
-              >
-                A descriptive secondary text placeholder. Use it to explain your
-                business offer better.
-              </Typography>
-              <Button size="lg" endDecorator={<ArrowForward />}>
-                Get Started
-              </Button>
-              <Typography>
-                Already a member? <Link fontWeight="lg">Sign in</Link>
-              </Typography>
-            </TwoSidedLayout>
+            <Stack direction="column" spacing={1} sx={{ mx: "auto", mt: 10 }}>
+              <TwoSidedLayout>
+                <Typography level="h1" fontWeight="xl" sx={{}}>
+                  In-context Explanation
+                </Typography>
+                <Typography
+                  fontSize="lg"
+                  textColor="text.secondary"
+                  lineHeight="lg"
+                >
+                  Select any text, and Devgen will search the current GitHub
+                  repository to generate a tailored explanation.
+                </Typography>
+                <List marker="disc">
+                  <ListItem>
+                    <Typography fontSize="xl">Code Explanation</Typography>
+                    <Typography fontSize="md">
+                      Select a code snippet to receive a detailed breakdown of
+                      its functionality
+                    </Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography fontSize="xl">Feature Explanation</Typography>
+                    <Typography fontSize="md">
+                      Select a feature description to get an in-depth
+                      explanation of its purpose and implementation
+                    </Typography>
+                  </ListItem>
+                </List>
+              </TwoSidedLayout>
+              <TwoSidedLayout>
+                <Typography level="h1" fontWeight="xl" sx={{}}>
+                  In-context Task Solving
+                </Typography>
+                <Typography
+                  fontSize="lg"
+                  textColor="text.secondary"
+                  lineHeight="lg"
+                >
+                  Simply send a question to Devgen, and it will search the
+                  current GitHub repository to generate a tailored solution for
+                  you.
+                </Typography>
+                <List marker="disc">
+                  <ListItem>
+                    <Typography fontSize="xl">Custom Usage Examples</Typography>
+                    <Typography fontSize="md">
+                      DevGen creates personalized usage examples based on your
+                      specific requirements.
+                    </Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography fontSize="xl">
+                      Issue Resolution Planning
+                    </Typography>
+                    <Typography fontSize="md">
+                      Select an issue, and Devgen will generate a comprehensive
+                      plan to address and resolve it.
+                    </Typography>
+                  </ListItem>
+                </List>
+              </TwoSidedLayout>
+              <TwoSidedLayout>
+                <Typography level="h1" fontWeight="xl" sx={{}}>
+                  On-demand Code Index
+                </Typography>
+                <Typography
+                  fontSize="lg"
+                  textColor="text.secondary"
+                  lineHeight="lg"
+                >
+                  You can refresh the code index at any time to access the most
+                  up-to-date information.
+                </Typography>
+                <List marker="disc">
+                  <ListItem>
+                    <Typography fontSize="xl">Custom Usage Examples</Typography>
+                    <Typography fontSize="md">
+                      DevGen creates personalized usage examples based on your
+                      specific requirements.
+                    </Typography>
+                  </ListItem>
+                  <ListItem>
+                    <Typography fontSize="xl">
+                      Issue Resolution Planning
+                    </Typography>
+                    <Typography fontSize="md">
+                      Select an issue, and Devgen will generate a comprehensive
+                      plan to address and resolve it.
+                    </Typography>
+                  </ListItem>
+                </List>
+              </TwoSidedLayout>
+            </Stack>
           </Box>
           <Box component="footer" sx={{ py: 3 }}>
             <Typography level="body-xs" textAlign="center">
