@@ -69,8 +69,7 @@ export default function LandingPage() {
               >
                 <Typography>Devgen</Typography>
                 <Typography color="neutral">:</Typography>
-                <Typography color="primary">Supercharge</Typography> your GitHub
-                workflow with context aware AI assistance
+                The AI assistant that <Typography color="primary">knows</Typography> your GitHub repository
               </Typography>
               <Typography
                 fontSize="lg"
