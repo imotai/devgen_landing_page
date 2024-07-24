@@ -1,11 +1,9 @@
 import * as React from "react";
 import GlobalStyles from "@mui/joy/GlobalStyles";
 import Box from "@mui/joy/Box";
-import Link from "@mui/joy/Link";
 import Typography from "@mui/joy/Typography";
 import Stack from "@mui/joy/Stack";
 import { useAsyncFn } from "react-use";
-import ArrowForward from "@mui/icons-material/ArrowForward";
 import PlayVideo from "./PlayVideo";
 import AspectRatio from "@mui/joy/AspectRatio";
 import HeaderMenu from "./HeaderMenu";
@@ -13,9 +11,7 @@ import TwoSidedLayout from "./TwoSlideLayout";
 import Button from "@mui/joy/Button";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
-import { Avatar } from "@mui/joy";
 import { FaChrome } from "react-icons/fa";
-import { FaChevronCircleRight } from "react-icons/fa";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 
 export default function LandingPage() {
@@ -96,14 +92,14 @@ export default function LandingPage() {
                   variant="solid"
                   size="lg"
                   startDecorator={<FaChrome />}
-                  endDecorator={<FaUpRightFromSquare />}
                 >
-                  Try it for free
+                  Get Early Access
                 </Button>
               </Stack>
               <AspectRatio
+                ratio="16/9"
                 sx={(theme) => ({
-                  width: { xs: "100%", md: "80%" },
+                  width: { xs: "100%", md: "100%" },
                 })}
                 variant="plain"
               >
@@ -112,39 +108,44 @@ export default function LandingPage() {
             </Stack>
             <Stack direction="column" spacing={1} sx={{ mx: "auto", mt: 10 }}>
               <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" 
-                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
-                >
+                <Typography level="h1" fontWeight="xl">
                   In-Context Explanation with Linked References
-
                 </Typography>
                 <Typography
                   fontSize="xl"
                   textColor="text.secondary"
                   lineHeight="lg"
                 >
-                  Select any text, and Devgen will search the current GitHub repository to generate a tailored explanation, complete with code breakdowns and technology insights.
+                  Select any text, and Devgen will search the current GitHub
+                  repository to generate a tailored explanation, complete with
+                  code breakdowns, technology insights and linked references.
                   Devgen can be used for the following purposes:
                 </Typography>
                 <List marker="disc">
                   <ListItem>
-                    <Typography fontSize="xl" level="title-lg">Code Explanation</Typography>
+                    <Typography fontSize="xl" level="title-lg">
+                      Code Explanation
+                    </Typography>
                     <Typography fontSize="xl">
-                      Select a code snippet to receive a detailed breakdown of its functionality, including linked code references, relevant issues, and pull requests.
+                      Select a code snippet to receive a detailed breakdown of
+                      its functionality, including linked code references,
+                      relevant issues, and pull requests.
                     </Typography>
                   </ListItem>
                   <ListItem>
-                    <Typography fontSize="xl" level="title-lg">Technology Explanation</Typography>
+                    <Typography fontSize="xl" level="title-lg">
+                      Implementation Explanation
+                    </Typography>
                     <Typography fontSize="xl">
-                      Select a technology description to get an in-depth explanation of its purpose, implementation, and usage within this repository
+                      Select a technology description to get an in-depth
+                      explanation of its purpose, implementation, and usage
+                      within this repository
                     </Typography>
                   </ListItem>
                 </List>
               </TwoSidedLayout>
               <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" sx={{}}
-                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
-                >
+                <Typography level="h1" fontWeight="xl" sx={{}}>
                   In-Context Problem Solving
                 </Typography>
                 <Typography
@@ -153,64 +154,26 @@ export default function LandingPage() {
                   lineHeight="lg"
                 >
                   Simply send a question to Devgen, and it will search the
-                  current GitHub repository to generate a tailored solution for
-                  you.
+                  current GitHub repository to generate a solution for you.
+                  Devgen can be used for the following purposes:
                 </Typography>
                 <List marker="disc">
                   <ListItem>
-                    <Typography fontSize="xl">Tailored Usage Examples</Typography>
+                    <Typography fontSize="xl" level="title-lg">
+                      Usage Examples
+                    </Typography>
                     <Typography fontSize="md">
-                      DevGen crafts personalized usage examples to match your specific requirements
+                      Devgen crafts personalized usage examples to match your
+                      specific requirements
                     </Typography>
                   </ListItem>
                   <ListItem>
-                    <Typography fontSize="xl">
-                      Strategic Issue Resolution
+                    <Typography fontSize="xl" level="title-lg">
+                      Issue Resolution
                     </Typography>
                     <Typography fontSize="md">
-                      Choose an issue, and DevGen will develop a detailed plan to address and resolve it effectively
-                    </Typography>
-                  </ListItem>
-                </List>
-                <Typography
-                  fontSize="lg"
-                  textColor="text.secondary"
-                  lineHeight="lg"
-                >
-                  Simply send a question to Devgen, and it will search the
-                  current GitHub repository to generate a tailored solution for
-                  you.
-                </Typography>
-              </TwoSidedLayout>
-              <TwoSidedLayout>
-                <Typography level="h1" fontWeight="xl" sx={{}}
-                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
-                >
-                  On-demand Code Index
-                </Typography>
-                <Typography
-                  fontSize="lg"
-                  textColor="text.secondary"
-                  lineHeight="lg"
-                >
-                  You can refresh the code index at any time to access the most
-                  up-to-date information.
-                </Typography>
-                <List marker="disc">
-                  <ListItem>
-                    <Typography fontSize="xl">Custom Usage Examples</Typography>
-                    <Typography fontSize="md">
-                      DevGen creates personalized usage examples based on your
-                      specific requirements.
-                    </Typography>
-                  </ListItem>
-                  <ListItem>
-                    <Typography fontSize="xl">
-                      Issue Resolution Planning
-                    </Typography>
-                    <Typography fontSize="md">
-                      Select an issue, and Devgen will generate a comprehensive
-                      plan to address and resolve it.
+                      Choose an issue, and Devgen will develop a detailed plan
+                      to address and resolve it effectively
                     </Typography>
                   </ListItem>
                 </List>
