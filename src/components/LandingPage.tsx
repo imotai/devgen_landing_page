@@ -12,7 +12,7 @@ import Button from "@mui/joy/Button";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import { FaChrome } from "react-icons/fa";
-import { FaUpRightFromSquare } from "react-icons/fa6";
+import { FaPlayCircle } from "react-icons/fa";
 
 export default function LandingPage() {
   const [openVideo, setOpenVideo] = React.useState<boolean>(false);
@@ -69,7 +69,9 @@ export default function LandingPage() {
               >
                 <Typography>Devgen</Typography>
                 <Typography color="neutral">:</Typography>
-                The AI assistant that <Typography color="primary">knows</Typography> your GitHub repository
+                The AI assistant that{" "}
+                <Typography color="primary">knows</Typography> your GitHub
+                repository
               </Typography>
               <Typography
                 fontSize="lg"
@@ -93,6 +95,14 @@ export default function LandingPage() {
                   startDecorator={<FaChrome />}
                 >
                   Get Early Access
+                </Button>
+                <Button
+                  color="neutral"
+                  variant="outlined"
+                  size="lg"
+                  startDecorator={<FaPlayCircle />}
+                >
+                  <Typography>Watch Demo{""}</Typography>
                 </Button>
               </Stack>
               <AspectRatio
