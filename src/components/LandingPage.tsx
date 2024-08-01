@@ -24,16 +24,7 @@ export default function LandingPage() {
   return (
     <>
       <PlayVideo open={openVideo} url={videoUrl} setOpen={setOpenVideo} />
-      <GlobalStyles
-        styles={{
-          ":root": {
-            "--Collapsed-breakpoint": "769px", // form will stretch when viewport is below `769px`
-            "--Cover-width": "50vw", // must be `vw` only
-            "--Form-maxWidth": "800px",
-            "--Transition-duration": "0.4s", // set to `none` to disable transition
-          },
-        }}
-      />
+      
       <Box
         sx={(theme) => ({
           width: { xs: "100%", md: "60vw" },

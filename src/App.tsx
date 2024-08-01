@@ -22,9 +22,9 @@ export default function App() {
       <CssVarsProvider defaultMode="dark" disableTransitionOnChange>
         <XpieContextProvider>
           <CssBaseline />
-          <Box sx={{ display: "flex", minHeight: "100dvh" }}>
-            <Outlet />
-          </Box>
+                  <Box sx={{ display: "flex", minHeight: "100dvh" }}>
+                  <Outlet />
+                  </Box>
         </XpieContextProvider>
       </CssVarsProvider>
     </StyledEngineProvider>

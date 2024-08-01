@@ -1,296 +1,224 @@
 import * as React from "react";
-import GlobalStyles from "@mui/joy/GlobalStyles";
 import Box from "@mui/joy/Box";
 import Link from "@mui/joy/Link";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
-import Stack from "@mui/joy/Stack";
-import XCopilotLogo from "./XCopilotLogo";
 import Divider from "@mui/joy/Divider";
-import Grid from "@mui/joy/Grid";
-import Chip from "@mui/joy/Chip";
 import { useColorScheme } from "@mui/joy/styles";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import ListItemDecorator from "@mui/joy/ListItemDecorator";
 import CardActions from "@mui/joy/CardActions";
-import Check from "@mui/icons-material/Check";
+import CheckCircle from "@mui/icons-material/Check";
+import Close from "@mui/icons-material/CloseRounded";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import Alert from "@mui/joy/Alert";
+import HeaderMenu from "./HeaderMenu";
+import Grid from '@mui/joy/Grid';
+import Button from "@mui/joy/Button";
+import { FaChrome } from "react-icons/fa";
+import Stack from "@mui/joy/Stack";
+
 export default function PricingPage() {
   const { mode, setMode } = useColorScheme();
   return (
     <>
-      <GlobalStyles
-        styles={{
-          ":root": {
-            "--Collapsed-breakpoint": "769px", // form will stretch when viewport is below `769px`
-            "--Cover-width": "50vw", // must be `vw` only
-            "--Form-maxWidth": "800px",
-            "--Transition-duration": "0.4s", // set to `none` to disable transition
-          },
-        }}
-      />
       <Box
         sx={(theme) => ({
-          width: "100%",
+          width: { xs: "100%", md: "60vw" },
           display: "flex",
+          mx: "auto",
         })}
       >
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            minHeight: "100dvh",
-            minWidth: "800",
-            width: "60%",
-            px: 2,
-            mx: "auto",
+            width: "100%",
           }}
         >
-          <Box
-            component="header"
-            sx={{
-              paddingTop: 2,
-              paddingBottom: 1,
-              display: "flex",
-              width: "100%",
-              alignItems: "left",
-              justifyContent: "space-between",
-            }}
-          >
-            <Box
-              sx={{
-                gap: 1,
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <XCopilotLogo />
-              <Stack direction="row" spacing={4} sx={{ marginLeft: 10 }}>
-                <Link href="/">
-                  <Typography level="title-lg">主页</Typography>
-                </Link>
-                <Link>
-                  <Typography level="title-lg">文档</Typography>
-                </Link>
-                <Link href="/pricing">
-                  <Typography level="title-lg">定价</Typography>
-                </Link>
-              </Stack>
-            </Box>
-          </Box>
-          <Divider></Divider>
 
+          <HeaderMenu />
           <Box
             component="main"
             sx={{
               width: "100%",
             }}
           >
-            <Grid container spacing={2} sx={{ flexGrow: 1 }}>
-              <Grid xs={4}></Grid>
-              <Grid xs={4}>
-                <Alert
-                  variant="soft"
-                  sx={{ marginTop: 10, justifyContent: "center" }}
-                  color="warning"
-                >
-                  Beta内测期间，所有功能免费使用
-                </Alert>
-              </Grid>
-              <Grid xs={4}></Grid>
-
-              <Grid
-                xs={12}
-                sx={{
-                  marginTop: 15,
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
+        <Stack
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              spacing={1}
+              sx={{ mx: "auto", mt: 20, mb:10,  textAlign: "center" }}
+            >
+              <Typography
+                level="h1"
+                fontWeight="xl"
+                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
               >
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "grid",
-                    gridTemplateColumns:
-                      "repeat(auto-fill, minmax(min(100%, 300px), 1fr))",
-                    gap: 2,
-                  }}
-                >
-                  <Card
+                <Typography>Pricing</Typography>
+              </Typography>
+              <Typography
+              level="h4"
+              >
+                Choose the plan that works best for you.
+              </Typography>
+            </Stack>
+
+            
+            <Grid container spacing={2}    alignItems="flex-end"
+            >
+              <Grid 
+              xs={12}
+              sm={6}
+              md={4}
+              >
+        <Card
                     size="lg"
-                    variant="solid"
+                    variant="soft"
                     color="neutral"
-                    invertedColors
-                    sx={{ bgcolor: "neutral.900" }}
                   >
-                    <Chip size="sm" variant="outlined" color="neutral">
-                      basic
-                    </Chip>
-                    <Typography level="h2">个人用户</Typography>
+                    <Typography level="h2">Free Plan</Typography>
+                    <Typography level="title-lg">Full feature access</Typography>
                     <Divider inset="none" />
                     <List
                       size="sm"
-                      sx={{ mx: "calc(-1 * var(--ListItem-paddingX))" }}
                     >
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        40000 token/天
+                        <Typography level="body-md">100 Repository Q&A requests</Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        10个仓库索引
+                        <Typography level="body-md">2 Issue Resolution Plan requests</Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        支持github
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        支持gitee
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        微信群支持
+                        <Typography level="body-md">6 Code File Change generation requests</Typography>
                       </ListItem>
                     </List>
                     <Divider inset="none" />
                     <CardActions>
-                      <Typography level="title-lg" sx={{ mr: "auto" }}>
-                        免费{" "}
+                    <Typography level="h2" sx={{ mr: "auto" }}>
+                        $0{" "}
                         <Typography fontSize="sm" textColor="text.tertiary">
-                          / month
+                          /month
                         </Typography>
                       </Typography>
+                    <Button
+                  color="neutral"
+                  variant="outlined"
+                    >
+                      Get Access
+                    </Button>
                     </CardActions>
                   </Card>
-                  <Card
+              </Grid>
+
+              <Grid 
+               xs={12}
+              sm={6}
+              md={4}>
+    <Card
                     size="lg"
-                    variant="solid"
-                    color="neutral"
-                    invertedColors
-                    sx={{ bgcolor: "neutral.900" }}
+                    color="primary"
+                    variant="soft"
                   >
-                    <Chip size="sm" variant="outlined">
-                      Pro
-                    </Chip>
-                    <Typography level="h2">团队用户</Typography>
+                      <Typography level="h2">Pro Plan</Typography>
+                      <Typography level="title-lg">Ideal for daily work</Typography>
                     <Divider inset="none" />
                     <List
                       size="sm"
-                      sx={{
-                        display: "grid",
-                        gridTemplateColumns: "1fr 1fr",
-                        mx: "calc(-1 * var(--ListItem-paddingX))",
-                      }}
                     >
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        100000 token/天
+                        <Typography level="body-lg">
+                        100 Repository Q&A requests/day
+                          </Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        20个仓库索引
+                        <Typography level="body-lg">
+                        5 Issue Resolution Plan requests/day
+                        </Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        独立运行节点
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        支持个性化域名
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        支持对接企业版本gitee
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        支持对接企业版本github
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        7x24小时支持
+                        <Typography level="body-lg">
+                        12 Code File Change Generation requests/day
+                        </Typography>
                       </ListItem>
                     </List>
                     <Divider inset="none" />
                     <CardActions>
-                      <Typography level="title-lg" sx={{ mr: "auto" }}>
-                        199¥{" "}
+                      <Typography level="h2" sx={{ mr: "auto" }}>
+                        $18{" "}
                         <Typography fontSize="sm" textColor="text.tertiary">
-                          /人/month
+                          /month
                         </Typography>
                       </Typography>
+                   <Button
+                  color="primary"
+                  variant="solid"
+                    >
+                      Get Started
+                    </Button>
+
                     </CardActions>
                   </Card>
-                  <Card
+
+              </Grid>
+              <Grid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+              xs={12}
+              sm={6}
+              md={4}
+              >
+<Card
+                    
                     size="lg"
-                    variant="solid"
+                    variant="soft"
                     color="neutral"
-                    invertedColors
-                    sx={{ bgcolor: "neutral.900" }}
                   >
-                    <Chip size="sm" variant="outlined">
-                      私有化部署
-                    </Chip>
-                    <Typography level="h2">私有化用户</Typography>
+                      <Typography level="h2">Enterprise</Typography>
+                      <Typography level="title-lg">Customized for your team</Typography>
                     <Divider inset="none" />
                     <List
                       size="sm"
-                      sx={{
-                        display: "grid",
-                        gridTemplateColumns: "1fr 1fr",
-                        mx: "calc(-1 * var(--ListItem-paddingX))",
-                      }}
                     >
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle  />
                         </ListItemDecorator>
-                        支持集成第3方大模型
+                        <Typography level="body-md">Self-hosted</Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        支持对接企业内部代码仓库
+                        <Typography level="body-md">
+                        GitLab Integration
+</Typography>
                       </ListItem>
                       <ListItem>
                         <ListItemDecorator>
-                          <Check />
+                          <CheckCircle />
                         </ListItemDecorator>
-                        支持对接企业账户系统
-                      </ListItem>
-                      <ListItem>
-                        <ListItemDecorator>
-                          <Check />
-                        </ListItemDecorator>
-                        7x24小时支持
+
+                        <Typography level="body-md">
+                        SSO Customization
+</Typography>
                       </ListItem>
                     </List>
                     <Divider inset="none" />
@@ -300,13 +228,23 @@ export default function PricingPage() {
                         href="mailto:service@xpie.dev"
                         target="_blank"
                       >
-                        联系我们
+                        <Typography level="title-lg">
+                        Contact Us for Pricing
+                        </Typography>
                       </Link>
                     </CardActions>
                   </Card>
-                </Box>
+
               </Grid>
+
             </Grid>
+
+
+        
+               
+            
+ 
+
           </Box>
           <Box component="footer" sx={{ py: 3 }}>
             <Typography level="body-xs" textAlign="center">
