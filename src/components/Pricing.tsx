@@ -130,7 +130,8 @@ export default function PricingPage() {
                                         <Button
                                             color="neutral"
                                             variant="outlined"
-                                            onClick={() => navigate('/signup')}
+                                            onClick={() => 
+                                                navigate('/getEarlyAccess')}
                                         >
                                             Get Access
                                         </Button>
