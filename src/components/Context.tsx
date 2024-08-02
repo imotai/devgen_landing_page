@@ -13,7 +13,7 @@ import {
     Usage,
     login,
     refreshToken,
-} from 'agent-sdk'
+} from 'devgen-sdk'
 import { getPlainFromStorage, popupCenter, savePlainToStorage } from '../utils'
 
 export type UserProfile = {
@@ -21,8 +21,6 @@ export type UserProfile = {
     avatarUrl: string
     role: number
     accessToken: string
-    quota: Quota
-    usage: Usage
 }
 
 type IDevgenContext = {
@@ -50,24 +48,26 @@ function DevgenContextProvider({ children }: { children: React.ReactNode }) {
     const swapUserProfile = () => {
         const responseStr = getPlainFromStorage('user')
         if (responseStr) {
-            const response = JSON.parse(responseStr)
-            setUser({
-                avatarUrl: response.user.avatar,
-                login: response.user.name,
-                role: response.user.role,
-                accessToken: response.accessToken,
-                quota: response.user.quota,
-                usage: response.user.usage,
-            } as UserProfile)
-            const newClient = createClient({
-                url: COPILOT_GRPC_URL,
-                options: {
-                    meta: {
-                        authorization: `Bearer ${response.accessToken}`,
+            try {
+                const response = JSON.parse(responseStr)
+                setUser({
+                    avatarUrl: response.user.avatar,
+                    login: response.user.name,
+                    role: response.user.role,
+                    accessToken: response.accessToken,
+                } as UserProfile)
+                const newClient = createClient({
+                    url: COPILOT_GRPC_URL,
+                    options: {
+                        meta: {
+                            authorization: `Bearer ${response.accessToken}`,
+                        },
                     },
-                },
-            })
-            setClient(newClient)
+                })
+                setClient(newClient)
+            } catch (e) {
+                console.log(e)
+            }
         }
     }
     const [autoLoginState, autoLogin] = useAsyncFn(async () => {

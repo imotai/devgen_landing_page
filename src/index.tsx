@@ -5,6 +5,7 @@ import App from './App'
 import LandingPage from './components/LandingPage'
 import PricingPage from './components/Pricing'
 import LoginPage from './components/Login'
+import GetEarlyAccessPage from './components/GetEarlyAccess'
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
             {
                 path: '',
                 element: <LandingPage />,
+            },
+            {
+                path: 'getEarlyAccess',
+                element: <GetEarlyAccessPage />,
             },
             {
                 path: 'pricing',

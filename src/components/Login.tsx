@@ -5,7 +5,6 @@ import Stack from '@mui/joy/Stack'
 import { useDevgenContext } from './Context'
 import { base64UrlDecode } from '../utils'
 import CircularProgress from '@mui/joy/CircularProgress'
-
 export default function LoginPage() {
     const mounted = useRef(false)
     const { login, loginState } = useDevgenContext()

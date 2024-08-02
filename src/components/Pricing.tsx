@@ -14,8 +14,10 @@ import HeaderMenu from './HeaderMenu'
 import Grid from '@mui/joy/Grid'
 import Button from '@mui/joy/Button'
 import Stack from '@mui/joy/Stack'
+import { useNavigate } from 'react-router-dom'
 
 export default function PricingPage() {
+    const navigate = useNavigate()
     return (
         <>
             <Box
@@ -46,7 +48,7 @@ export default function PricingPage() {
                             spacing={1}
                             sx={{
                                 mx: 'auto',
-                                mt: 20,
+                                mt: 10,
                                 mb: 10,
                                 textAlign: 'center',
                             }}
@@ -128,6 +130,7 @@ export default function PricingPage() {
                                         <Button
                                             color="neutral"
                                             variant="outlined"
+                                            onClick={() => navigate('/signup')}
                                         >
                                             Get Access
                                         </Button>

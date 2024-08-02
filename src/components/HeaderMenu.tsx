@@ -55,6 +55,9 @@ export default function HeaderMenu() {
                     <XCopilotLogo />
                     <Stack direction="row" spacing={5}>
                         <Link href="/">
+                            <Typography level="title-md">Home</Typography>
+                        </Link>
+                        <Link href="/">
                             <Typography level="title-md">Download</Typography>
                         </Link>
                         <Link href="/pricing">
@@ -66,11 +69,13 @@ export default function HeaderMenu() {
                     <ColorSchemeToggle />
                     {user && user.accessToken ? (
                         <>
+                        <IconButton>
                             <Avatar
                                 size="sm"
                                 src={user.avatarUrl}
                                 sx={{}}
                             ></Avatar>
+                        </IconButton>
                         </>
                     ) : (
                         <Button

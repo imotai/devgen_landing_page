@@ -13,10 +13,12 @@ import List from '@mui/joy/List'
 import ListItem from '@mui/joy/ListItem'
 import { FaChrome } from 'react-icons/fa'
 import { FaPlayCircle } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 export default function LandingPage() {
     const [openVideo, setOpenVideo] = React.useState<boolean>(false)
     const [videoUrl, setVideoUrl] = React.useState<string>('')
+    const navigate = useNavigate()
     const [playVideoState, playVideoFn] = useAsyncFn(async (url: string) => {
         setVideoUrl(url)
         setOpenVideo(true)
@@ -86,6 +88,9 @@ export default function LandingPage() {
                                     variant="solid"
                                     size="lg"
                                     startDecorator={<FaChrome />}
+                                    onClick={() => {
+                                        navigate('/getEarlyAccess')
+                                    }}
                                 >
                                     Get Early Access
                                 </Button>
@@ -124,9 +129,7 @@ export default function LandingPage() {
                                 >
                                     Select any text, and Devgen will search the
                                     current GitHub repository to generate a
-                                    tailored explanation, complete with code
-                                    breakdowns, technology insights and linked
-                                    references. Devgen can be used for the
+                                    tailored explanation. Devgen can be used for the
                                     following purposes:
                                 </Typography>
                                 <List marker="disc">
@@ -150,30 +153,26 @@ export default function LandingPage() {
                                             fontSize="xl"
                                             level="title-lg"
                                         >
-                                            Implementation Explanation
+                                            Usage Example Generation
                                         </Typography>
                                         <Typography fontSize="xl">
-                                            Select a technology description to
-                                            get an in-depth explanation of its
-                                            purpose, implementation, and usage
-                                            within this repository
+                                            Devgen crafts personalized usage
+                                            examples to match your specific
+                                            requirement
                                         </Typography>
                                     </ListItem>
                                 </List>
                             </TwoSidedLayout>
                             <TwoSidedLayout>
                                 <Typography level="h1" fontWeight="xl" sx={{}}>
-                                    In-Context Problem Solving
+                                    In-Context Issue Solving
                                 </Typography>
                                 <Typography
                                     fontSize="lg"
                                     textColor="text.secondary"
                                     lineHeight="lg"
                                 >
-                                    Simply send a question to Devgen, and it
-                                    will search the current GitHub repository to
-                                    generate a solution for you. Devgen can be
-                                    used for the following purposes:
+                                    Submit your issue to Devgen, and it will automatically search the current GitHub repository to provide a tailored solution. Devgen's approach involves two key steps:
                                 </Typography>
                                 <List marker="disc">
                                     <ListItem>
@@ -181,12 +180,10 @@ export default function LandingPage() {
                                             fontSize="xl"
                                             level="title-lg"
                                         >
-                                            Usage Examples
+                                            Issue Plan Generation
                                         </Typography>
                                         <Typography fontSize="md">
-                                            Devgen crafts personalized usage
-                                            examples to match your specific
-                                            requirements
+                                        Devgen breaks down the problem and creates a detailed, step-by-step plan to address the issue.
                                         </Typography>
                                     </ListItem>
                                     <ListItem>
@@ -194,12 +191,12 @@ export default function LandingPage() {
                                             fontSize="xl"
                                             level="title-lg"
                                         >
-                                            Issue Resolution
+                                            Code Change Generation
                                         </Typography>
                                         <Typography fontSize="md">
-                                            Choose an issue, and Devgen will
-                                            develop a detailed plan to address
-                                            and resolve it effectively
+                                        Code Modification
+                                        Based on the generated plan, Devgen produces precise code changes necessary to resolve the issue
+                                            
                                         </Typography>
                                     </ListItem>
                                 </List>
