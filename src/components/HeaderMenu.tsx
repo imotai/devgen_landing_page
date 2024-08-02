@@ -66,7 +66,6 @@ export default function HeaderMenu() {
                     </Stack>
                 </Box>
                 <Stack direction="row" spacing={1} alignItems="center">
-                    <ColorSchemeToggle />
                     {user && user.accessToken ? (
                         <>
                         <IconButton>
