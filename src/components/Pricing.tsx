@@ -101,6 +101,14 @@ export default function PricingPage() {
                                                 6 File Diff Generation
                                             </Typography>
                                         </ListItem>
+                                        <ListItem>
+                                            <ListItemDecorator>
+                                                <CheckCircle />
+                                            </ListItemDecorator>
+                                            <Typography level="body-sm">
+                                                5 Update Index Requests
+                                            </Typography>
+                                        </ListItem>
                                     </List>
                                     <Divider inset="none" />
                                     <CardActions>
@@ -169,6 +177,14 @@ export default function PricingPage() {
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
                                                 200 File Diff Generation
+                                            </Typography>
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListItemDecorator>
+                                                <CheckCircle />
+                                            </ListItemDecorator>
+                                            <Typography level="body-sm">
+                                                50 Update Index Requests
                                             </Typography>
                                         </ListItem>
                                     </List>
