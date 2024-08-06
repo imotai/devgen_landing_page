@@ -118,7 +118,7 @@ export default function LandingPage() {
                             spacing={1}
                             sx={{ mx: 'auto', mt: 10 }}
                         >
-                            <TwoSidedLayout>
+                            <TwoSidedLayout video="https://www.youtube.com/watch?v=mkFi7muxVMQ">
                                 <Typography level="h1" fontWeight="xl">
                                     In-Context Repository Q&A
                                 </Typography>
@@ -129,8 +129,8 @@ export default function LandingPage() {
                                 >
                                     Select any text, and Devgen will search the
                                     current GitHub repository to generate a
-                                    tailored explanation. Devgen can be used for the
-                                    following purposes:
+                                    tailored explanation. Devgen can be used for
+                                    the following purposes:
                                 </Typography>
                                 <List marker="disc">
                                     <ListItem>
@@ -163,7 +163,7 @@ export default function LandingPage() {
                                     </ListItem>
                                 </List>
                             </TwoSidedLayout>
-                            <TwoSidedLayout>
+                            <TwoSidedLayout video="https://www.youtube.com/watch?v=mkFi7muxVMQ">
                                 <Typography level="h1" fontWeight="xl" sx={{}}>
                                     In-Context Issue Solving
                                 </Typography>
@@ -172,7 +172,10 @@ export default function LandingPage() {
                                     textColor="text.secondary"
                                     lineHeight="lg"
                                 >
-                                    Submit your issue to Devgen, and it will automatically search the current GitHub repository to provide a tailored solution. Devgen's approach involves two key steps:
+                                    Submit your issue to Devgen, and it will
+                                    automatically search the current GitHub
+                                    repository to provide a tailored solution.
+                                    Devgen's approach involves two key steps:
                                 </Typography>
                                 <List marker="disc">
                                     <ListItem>
@@ -183,7 +186,9 @@ export default function LandingPage() {
                                             Issue Plan Generation
                                         </Typography>
                                         <Typography fontSize="md">
-                                        Devgen breaks down the problem and creates a detailed, step-by-step plan to address the issue.
+                                            Devgen breaks down the problem and
+                                            creates a detailed, step-by-step
+                                            plan to address the issue.
                                         </Typography>
                                     </ListItem>
                                     <ListItem>
@@ -194,9 +199,10 @@ export default function LandingPage() {
                                             Code Change Generation
                                         </Typography>
                                         <Typography fontSize="md">
-                                        Code Modification
-                                        Based on the generated plan, Devgen produces precise code changes necessary to resolve the issue
-                                            
+                                            Code Modification Based on the
+                                            generated plan, Devgen produces
+                                            precise code changes necessary to
+                                            resolve the issue
                                         </Typography>
                                     </ListItem>
                                 </List>

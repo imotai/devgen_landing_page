@@ -80,8 +80,9 @@ export default function PricingPage() {
                                             <ListItemDecorator>
                                                 <CheckCircle />
                                             </ListItemDecorator>
-                                            <Typography level="body-sm">
-                                                100 Repository Q&A requests
+                                            <Typography level="body-sm" 
+                                            >
+                                                100 Repository Q&A
                                             </Typography>
                                         </ListItem>
                                         <ListItem>
@@ -89,8 +90,7 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                2 Issue Resolution Plan
-                                                Generation requests
+                                                2 Issue Resolution Plan Generation
                                             </Typography>
                                         </ListItem>
                                         <ListItem>
@@ -98,8 +98,7 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                6 File Code Change Generation
-                                                requests
+                                                6 File Diff Generation
                                             </Typography>
                                         </ListItem>
                                     </List>
@@ -110,8 +109,7 @@ export default function PricingPage() {
                                             sx={{ mr: 'auto' }}
                                             startDecorator={
                                                 <Typography
-                                                    fontSize="lg"
-                                                    textColor="text.secondary"
+                                                    fontSize="h1"
                                                 >
                                                     $
                                                 </Typography>
@@ -130,8 +128,9 @@ export default function PricingPage() {
                                         <Button
                                             color="neutral"
                                             variant="outlined"
-                                            onClick={() => 
-                                                navigate('/getEarlyAccess')}
+                                            onClick={() =>
+                                                navigate('/getEarlyAccess')
+                                            }
                                         >
                                             Get Access
                                         </Button>
@@ -152,7 +151,7 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                2000 Repository Q&A requests
+                                                2000 Repository Q&A
                                             </Typography>
                                         </ListItem>
                                         <ListItem>
@@ -161,7 +160,7 @@ export default function PricingPage() {
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
                                                 100 Issue Resolution Plan
-                                                Generation requests
+                                                Generation
                                             </Typography>
                                         </ListItem>
                                         <ListItem>
@@ -169,8 +168,7 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                200 File Code Change Generation
-                                                requests
+                                                200 File Diff Generation
                                             </Typography>
                                         </ListItem>
                                     </List>
@@ -181,8 +179,7 @@ export default function PricingPage() {
                                             level="h1"
                                             startDecorator={
                                                 <Typography
-                                                    fontSize="lg"
-                                                    textColor="text.secondary"
+                                                    fontSize="h1"
                                                 >
                                                     $
                                                 </Typography>
@@ -235,7 +232,7 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                SSO Customization
+                                                Private Repository
                                             </Typography>
                                         </ListItem>
                                         <ListItem>

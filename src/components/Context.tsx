@@ -14,7 +14,7 @@ import {
     login,
     refreshToken,
 } from 'devgen-sdk'
-import { getPlainFromStorage, popupCenter, savePlainToStorage } from '../utils'
+import { getPlainFromStorage, popupCenter, savePlainToStorage, removePlainFromStorage } from '../utils'
 
 export type UserProfile = {
     login: string
@@ -74,6 +74,7 @@ function DevgenContextProvider({ children }: { children: React.ReactNode }) {
         try {
             const userStr = getPlainFromStorage('user')
             if (userStr) {
+                removePlainFromStorage('user')
                 const userJson = JSON.parse(userStr)
                 const response = await refreshToken(
                     client,

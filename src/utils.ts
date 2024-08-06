@@ -87,7 +87,7 @@ export const savePlainToStorage = (key: string, value: any) => {
 export const getPlainFromStorage = (key: string) => {
     return window.localStorage.getItem(key)
 }
-const removePlainFromStorage = (key: string) => {
+export const removePlainFromStorage = (key: string) => {
     window.localStorage.removeItem(key)
 }
 

@@ -8,15 +8,17 @@ export default function DevgenLogo() {
     const { mode } = useColorScheme()
     return (
         <>
-        <Link href="/">
-            <Typography
-                level="h4"
-                startDecorator={
-                    <Avatar
-                        src={mode === 'light' ? './48_black.png' : './48.png'}
-                    ></Avatar>
-                }
-            ></Typography>
+            <Link href="/">
+                <Typography
+                    level="h4"
+                    startDecorator={
+                        <Avatar
+                            src={
+                                mode === 'light' ? './48_black.png' : './48.png'
+                            }
+                        ></Avatar>
+                    }
+                ></Typography>
             </Link>
         </>
     )

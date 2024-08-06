@@ -45,7 +45,7 @@ export default function HeaderMenu() {
         <>
             <Box
                 sx={{
-                    gap: 4,
+                    gap: 2,
                     display: 'flex',
                     p: 1,
                     justifyContent: 'space-between',
@@ -53,7 +53,7 @@ export default function HeaderMenu() {
             >
                 <Box sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
                     <XCopilotLogo />
-                    <Stack direction="row" spacing={5}>
+                    <Stack direction="row" spacing={2}>
                         <Link href="/">
                             <Typography level="title-md">Home</Typography>
                         </Link>
@@ -68,13 +68,13 @@ export default function HeaderMenu() {
                 <Stack direction="row" spacing={1} alignItems="center">
                     {user && user.accessToken ? (
                         <>
-                        <IconButton>
-                            <Avatar
-                                size="sm"
-                                src={user.avatarUrl}
-                                sx={{}}
-                            ></Avatar>
-                        </IconButton>
+                            <IconButton>
+                                <Avatar
+                                    size="sm"
+                                    src={user.avatarUrl}
+                                    sx={{}}
+                                ></Avatar>
+                            </IconButton>
                         </>
                     ) : (
                         <Button

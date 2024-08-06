@@ -10,7 +10,7 @@ import FormHelperText from '@mui/joy/FormHelperText'
 import Input from '@mui/joy/Input'
 import Button from '@mui/joy/Button'
 import { useDevgenContext } from './Context'
-import { joinWaitList , Client} from 'devgen-sdk'
+import { joinWaitList, Client } from 'devgen-sdk'
 
 export default function GetEarlyAccessPage() {
     const afterLoginSend = React.useRef(false)
@@ -19,7 +19,7 @@ export default function GetEarlyAccessPage() {
     const [error, setError] = React.useState('')
     const [message, setMessage] = React.useState('')
     const [sendApplyState, sendApplyFn] = useAsyncFn(
-        async (client:Client, email: string) => {
+        async (client: Client, email: string) => {
             // validate the email format
             if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
                 setError('Invalid email format')
@@ -130,7 +130,10 @@ export default function GetEarlyAccessPage() {
                                                         sendApplyState.loading
                                                     }
                                                     onClick={() => {
-                                                        sendApplyFn(client, email)
+                                                        sendApplyFn(
+                                                            client,
+                                                            email
+                                                        )
                                                     }}
                                                 >
                                                     Get Early Access
