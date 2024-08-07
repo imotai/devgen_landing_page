@@ -60,7 +60,7 @@ export default function LandingPage() {
                                 fontWeight="xl"
                                 fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                             >
-                                Devgen:The AI assistant that
+                                Devgen:The AI assistant
                             </Typography>
                             <Typewriter
                                         options={{
