@@ -14,7 +14,12 @@ import {
     login,
     refreshToken,
 } from 'devgen-sdk'
-import { getPlainFromStorage, popupCenter, savePlainToStorage, removePlainFromStorage } from '../utils'
+import {
+    getPlainFromStorage,
+    popupCenter,
+    savePlainToStorage,
+    removePlainFromStorage,
+} from '../utils'
 
 export type UserProfile = {
     login: string

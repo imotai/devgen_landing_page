@@ -80,8 +80,7 @@ export default function PricingPage() {
                                             <ListItemDecorator>
                                                 <CheckCircle />
                                             </ListItemDecorator>
-                                            <Typography level="body-sm" 
-                                            >
+                                            <Typography level="body-sm">
                                                 100 Repository Q&A
                                             </Typography>
                                         </ListItem>
@@ -90,7 +89,8 @@ export default function PricingPage() {
                                                 <CheckCircle />
                                             </ListItemDecorator>
                                             <Typography level="body-sm">
-                                                2 Issue Resolution Plan Generation
+                                                2 Issue Resolution Plan
+                                                Generation
                                             </Typography>
                                         </ListItem>
                                         <ListItem>
@@ -116,9 +116,7 @@ export default function PricingPage() {
                                             level="h1"
                                             sx={{ mr: 'auto' }}
                                             startDecorator={
-                                                <Typography
-                                                    fontSize="h1"
-                                                >
+                                                <Typography fontSize="h1">
                                                     $
                                                 </Typography>
                                             }
@@ -194,9 +192,7 @@ export default function PricingPage() {
                                             sx={{ mr: 'auto' }}
                                             level="h1"
                                             startDecorator={
-                                                <Typography
-                                                    fontSize="h1"
-                                                >
+                                                <Typography fontSize="h1">
                                                     $
                                                 </Typography>
                                             }

@@ -3,30 +3,21 @@ import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
 import { useAsyncFn } from 'react-use'
-import PlayVideo from './PlayVideo'
 import AspectRatio from '@mui/joy/AspectRatio'
 import HeaderMenu from './HeaderMenu'
-import TwoSidedLayout from './TwoSlideLayout'
 import Button from '@mui/joy/Button'
-import List from '@mui/joy/List'
-import ListItem from '@mui/joy/ListItem'
 import { FaChrome } from 'react-icons/fa'
 import { FaPlayCircle } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
+import ReactPlayer from 'react-player'
 
 export default function LandingPage() {
-    const [openVideo, setOpenVideo] = React.useState<boolean>(false)
-    const [videoUrl, setVideoUrl] = React.useState<string>('')
+    const [playVideo, setPlayVideo] = React.useState<boolean>(false)
+    const [player, setPlayer] = React.useState<ReactPlayer | null>(null)
     const navigate = useNavigate()
-    const [playVideoState, playVideoFn] = useAsyncFn(async (url: string) => {
-        setVideoUrl(url)
-        setOpenVideo(true)
-    })
     return (
         <>
-            <PlayVideo open={openVideo} url={videoUrl} setOpen={setOpenVideo} />
-
             <Box
                 sx={(theme) => ({
                     width: { xs: '100%', md: '60vw' },
@@ -63,17 +54,19 @@ export default function LandingPage() {
                                 Devgen:The AI assistant
                             </Typography>
                             <Typewriter
-                                        options={{
-                                            strings: ['knows the Github repository',
-'can draft code changes for you', 'can write issues for you'
-                                            ],
-                                            autoStart: true,
-                                            loop: true,
-                                            delay: 120,
-                                            deleteSpeed: 10,
-                                        }}
-                                    />
-                             <Typography
+                                options={{
+                                    strings: [
+                                        'knows the Github repository',
+                                        'can draft code changes for you',
+                                        'can write issues for you',
+                                    ],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 120,
+                                    deleteSpeed: 10,
+                                }}
+                            />
+                            <Typography
                                 fontSize="lg"
                                 textColor="text.secondary"
                                 lineHeight="lg"
@@ -99,14 +92,6 @@ export default function LandingPage() {
                                 >
                                     Get Early Access
                                 </Button>
-                                <Button
-                                    color="neutral"
-                                    variant="outlined"
-                                    size="lg"
-                                    startDecorator={<FaPlayCircle />}
-                                >
-                                    <Typography>Watch Demo{''}</Typography>
-                                </Button>
                             </Stack>
                             <AspectRatio
                                 ratio="16/9"
@@ -115,15 +100,28 @@ export default function LandingPage() {
                                 })}
                                 variant="plain"
                             >
-                                <img src="./first_look.png" />
+                                <ReactPlayer
+                                    url="https://www.youtube.com/watch?v=yf7_ayfqTCU"
+                                    playing={playVideo}
+                                    width="100%"
+                                    height="100%"
+                                    light="./first_look.png"
+                                    onClickPreview={() => setPlayVideo(true)}
+                                    ref={(player) => setPlayer(player)}
+                                    onEnded={() => {
+                                        setPlayVideo(false)
+                                        if (player) {
+                                            player.showPreview()
+                                        }
+                                    }}
+                                />
                             </AspectRatio>
                         </Stack>
                         <Stack
                             direction="column"
                             spacing={1}
                             sx={{ mx: 'auto', mt: 10 }}
-                        >
-                        </Stack>
+                        ></Stack>
                     </Box>
                     <Box component="footer" sx={{ py: 3 }}>
                         <Typography level="body-xs" textAlign="center">
