@@ -9,6 +9,7 @@
     margin: var(--Typography-margin, 0px);
     display: inline;
     color: var(--variant-plainColor, rgba(var(--joy-palette-primary-mainChannel) / 1));
+    text-align:center;
 }
 .Typewriter__cursor {
     font-size: clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem);
@@ -17,5 +18,6 @@
     display: inline;
 }
 .Typewriter {
+    text-align:center;
     display: inline;
 }
