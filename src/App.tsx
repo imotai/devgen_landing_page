@@ -4,6 +4,7 @@ import { StyledEngineProvider } from '@mui/joy/styles'
 import CssBaseline from '@mui/joy/CssBaseline'
 import { Outlet } from 'react-router-dom'
 import Box from '@mui/joy/Box'
+import './App.css'
 
 import { useDevgenContext, DevgenContextProvider } from './components/Context'
 const customTheme = extendTheme({

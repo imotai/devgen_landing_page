@@ -1,5 +1,4 @@
 import * as React from 'react'
-import GlobalStyles from '@mui/joy/GlobalStyles'
 import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
@@ -14,6 +13,7 @@ import ListItem from '@mui/joy/ListItem'
 import { FaChrome } from 'react-icons/fa'
 import { FaPlayCircle } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
+import Typewriter from 'typewriter-effect'
 
 export default function LandingPage() {
     const [openVideo, setOpenVideo] = React.useState<boolean>(false)
@@ -50,25 +50,30 @@ export default function LandingPage() {
                     >
                         <Stack
                             direction="column"
-                            justifyContent="center"
-                            alignItems="center"
                             spacing={1}
-                            sx={{ mx: 'auto', mt: 10, textAlign: 'center' }}
+                            sx={{ mx: 'auto', mt: 10 }}
+                            justifyContent={'center'}
+                            alignItems={'center'}
                         >
                             <Typography
                                 level="h1"
                                 fontWeight="xl"
                                 fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                             >
-                                <Typography>Devgen</Typography>
-                                <Typography color="neutral">:</Typography>
-                                The AI assistant that{' '}
-                                <Typography color="primary">
-                                    knows
-                                </Typography>{' '}
-                                your GitHub repository
+                                Devgen:The AI assistant that
                             </Typography>
-                            <Typography
+                            <Typewriter
+                                        options={{
+                                            strings: ['knows your Github repository',
+'can draft code changes for you', 'can write issues for you'
+                                            ],
+                                            autoStart: true,
+                                            loop: true,
+                                            delay: 120,
+                                            deleteSpeed: 10,
+                                        }}
+                                    />
+                             <Typography
                                 fontSize="lg"
                                 textColor="text.secondary"
                                 lineHeight="lg"
@@ -118,95 +123,6 @@ export default function LandingPage() {
                             spacing={1}
                             sx={{ mx: 'auto', mt: 10 }}
                         >
-                            <TwoSidedLayout video="https://www.youtube.com/watch?v=mkFi7muxVMQ">
-                                <Typography level="h1" fontWeight="xl">
-                                    In-Context Repository Q&A
-                                </Typography>
-                                <Typography
-                                    fontSize="xl"
-                                    textColor="text.secondary"
-                                    lineHeight="lg"
-                                >
-                                    Select any text, and Devgen will search the
-                                    current GitHub repository to generate a
-                                    tailored explanation. Devgen can be used for
-                                    the following purposes:
-                                </Typography>
-                                <List marker="disc">
-                                    <ListItem>
-                                        <Typography
-                                            fontSize="xl"
-                                            level="title-lg"
-                                        >
-                                            Code Explanation
-                                        </Typography>
-                                        <Typography fontSize="xl">
-                                            Select a code snippet to receive a
-                                            detailed breakdown of its
-                                            functionality, including linked code
-                                            references, relevant issues, and
-                                            pull requests.
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography
-                                            fontSize="xl"
-                                            level="title-lg"
-                                        >
-                                            Usage Example Generation
-                                        </Typography>
-                                        <Typography fontSize="xl">
-                                            Devgen crafts personalized usage
-                                            examples to match your specific
-                                            requirement
-                                        </Typography>
-                                    </ListItem>
-                                </List>
-                            </TwoSidedLayout>
-                            <TwoSidedLayout video="https://www.youtube.com/watch?v=mkFi7muxVMQ">
-                                <Typography level="h1" fontWeight="xl" sx={{}}>
-                                    In-Context Issue Solving
-                                </Typography>
-                                <Typography
-                                    fontSize="lg"
-                                    textColor="text.secondary"
-                                    lineHeight="lg"
-                                >
-                                    Submit your issue to Devgen, and it will
-                                    automatically search the current GitHub
-                                    repository to provide a tailored solution.
-                                    Devgen's approach involves two key steps:
-                                </Typography>
-                                <List marker="disc">
-                                    <ListItem>
-                                        <Typography
-                                            fontSize="xl"
-                                            level="title-lg"
-                                        >
-                                            Issue Plan Generation
-                                        </Typography>
-                                        <Typography fontSize="md">
-                                            Devgen breaks down the problem and
-                                            creates a detailed, step-by-step
-                                            plan to address the issue.
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography
-                                            fontSize="xl"
-                                            level="title-lg"
-                                        >
-                                            Code Change Generation
-                                        </Typography>
-                                        <Typography fontSize="md">
-                                            Code Modification Based on the
-                                            generated plan, Devgen produces
-                                            precise code changes necessary to
-                                            resolve the issue
-                                        </Typography>
-                                    </ListItem>
-                                </List>
-                            </TwoSidedLayout>
                         </Stack>
                     </Box>
                     <Box component="footer" sx={{ py: 3 }}>
