@@ -64,7 +64,7 @@ export default function LandingPage() {
                             </Typography>
                             <Typewriter
                                         options={{
-                                            strings: ['knows your Github repository',
+                                            strings: ['knows the Github repository',
 'can draft code changes for you', 'can write issues for you'
                                             ],
                                             autoStart: true,
