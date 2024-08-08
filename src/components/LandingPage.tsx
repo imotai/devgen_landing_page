@@ -94,7 +94,7 @@ export default function LandingPage() {
                                 </Button>
                             </Stack>
                             <AspectRatio
-                                ratio="16/9"
+                                ratio="16/10"
                                 sx={(theme) => ({
                                     width: { xs: '100%', md: '100%' },
                                 })}
