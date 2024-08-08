@@ -56,7 +56,7 @@ export default function LandingPage() {
                             <Typewriter
                                 options={{
                                     strings: [
-                                        'knows the Github repository',
+                                        'can read Github repository for you',
                                         'can draft code changes for you',
                                         'can write issues for you',
                                     ],
