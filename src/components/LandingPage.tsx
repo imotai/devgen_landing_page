@@ -51,7 +51,7 @@ export default function LandingPage() {
                                 fontWeight="xl"
                                 fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                             >
-                                Devgen:The AI assistant
+                                Devgen:The AI assistant for Github
                             </Typography>
                             <Typewriter
                                 options={{
