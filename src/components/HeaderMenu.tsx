@@ -68,8 +68,9 @@ export default function HeaderMenu() {
                 <Stack direction="row" spacing={1} alignItems="center">
                     {user && user.accessToken ? (
                         <>
-                            <Chip color="primary"
-                            variant='solid'
+                            <Chip 
+                            color="neutral"
+                            variant="outlined"
                             size='lg'
                             startDecorator={
                             <Avatar

@@ -13,6 +13,7 @@ import { FaChrome } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import { Chip, IconButton, Sheet } from '@mui/joy'
+import FooterMenu from './Footer'
 
 export default function LandingPage() {
     const navigate = useNavigate()
@@ -50,6 +51,7 @@ export default function LandingPage() {
                         >
                             <Typography
                                 level="h1"
+                                textAlign={'center'}
                                 fontWeight="xl"
                                 fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                             >
@@ -72,6 +74,7 @@ export default function LandingPage() {
                                 fontSize="lg"
                                 textColor="text.secondary"
                                 lineHeight="lg"
+                                textAlign={'center'}
                             >
                                 Devgen is a Chrome extension that lets you chat
                                 with your Github repository side by side.
@@ -144,7 +147,7 @@ export default function LandingPage() {
 >
     <Chip variant="outlined"   onClick={() => setPlaying(true)}
     >
-    <Typography level='h1'
+    <Typography level='h2'
       startDecorator={<FaPlayCircle/>}>
       See Devgen in action
       </Typography>
@@ -155,7 +158,7 @@ export default function LandingPage() {
                     
                     )}
         
-                            </AspectRatio>
+ </AspectRatio>
                         </Stack>
                         <Stack
                             direction="column"
@@ -164,6 +167,7 @@ export default function LandingPage() {
                         ></Stack>
                     </Box>
                     <Box component="footer" sx={{ py: 3 }}>
+                        <FooterMenu/>
                         <Typography level="body-xs" textAlign="center">
                             ©devgen {new Date().getFullYear()}
                         </Typography>
