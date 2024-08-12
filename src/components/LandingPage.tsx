@@ -5,7 +5,6 @@ import Stack from '@mui/joy/Stack'
 import { useAsyncFn } from 'react-use'
 
 import { FaPlayCircle } from "react-icons/fa"
-
 import AspectRatio from '@mui/joy/AspectRatio'
 import HeaderMenu from './HeaderMenu'
 import Button from '@mui/joy/Button'
@@ -14,6 +13,8 @@ import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import { Chip, IconButton, Sheet } from '@mui/joy'
 import FooterMenu from './Footer'
+import { GoLinkExternal } from "react-icons/go"
+
 
 export default function LandingPage() {
     const navigate = useNavigate()
@@ -94,8 +95,11 @@ export default function LandingPage() {
                                     onClick={() => {
                                         navigate('/getEarlyAccess')
                                     }}
+                                    endDecorator={
+                                        <GoLinkExternal/>
+                                    }
                                 >
-                                    Try it now
+                                    Add to Chrome
                                 </Button>
                               <Button
                                     variant="outlined"

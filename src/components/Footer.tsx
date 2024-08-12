@@ -23,7 +23,9 @@ export default function FooterMenu() {
             >
                 <Box sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
                     <XCopilotLogo />
-                    
+                    <Link href="/privacy">
+                        Privacy
+                    </Link>
                 </Box>
                 <Stack direction="row" spacing={1} alignItems="center">
                 <Link href="https://github.com/getdevgen/devgen" startDecorator={<ImGithub/>}
