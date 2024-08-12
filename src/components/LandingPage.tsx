@@ -93,7 +93,7 @@ export default function LandingPage() {
                                     size="lg"
                                     startDecorator={<FaChrome />}
                                     onClick={() => {
-                                        navigate('/getEarlyAccess')
+                                        window.location.href = 'https://chromewebstore.google.com/detail/iglkjhingcdlfanjlokiodgfcllmcfoc/preview?hl=en&authuser=0'
                                     }}
                                     endDecorator={
                                         <GoLinkExternal/>
