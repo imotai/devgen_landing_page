@@ -56,3 +56,6 @@
     text-align: center;
     display: inline;
 }
+video{
+    object-fit: cover; /*to cover all the box*/
+}

@@ -11,6 +11,11 @@ import Input from '@mui/joy/Input'
 import Button from '@mui/joy/Button'
 import { useDevgenContext } from './Context'
 import { joinWaitList, Client } from 'devgen-sdk'
+import Stepper from '@mui/joy/Stepper';
+import Step, { stepClasses } from '@mui/joy/Step';
+import StepIndicator, { stepIndicatorClasses } from '@mui/joy/StepIndicator';
+import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 
 export default function GetEarlyAccessPage() {
     const afterLoginSend = React.useRef(false)

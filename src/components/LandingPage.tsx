@@ -3,19 +3,21 @@ import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
 import { useAsyncFn } from 'react-use'
+
+import { FaPlayCircle } from "react-icons/fa"
+
 import AspectRatio from '@mui/joy/AspectRatio'
 import HeaderMenu from './HeaderMenu'
 import Button from '@mui/joy/Button'
 import { FaChrome } from 'react-icons/fa'
-import { FaPlayCircle } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
-import ReactPlayer from 'react-player'
+import { Chip, IconButton, Sheet } from '@mui/joy'
 
 export default function LandingPage() {
-    const [playVideo, setPlayVideo] = React.useState<boolean>(false)
-    const [player, setPlayer] = React.useState<ReactPlayer | null>(null)
     const navigate = useNavigate()
+    const player = React.useRef(null)
+    const [playing, setPlaying] = React.useState(false)
     return (
         <>
             <Box
@@ -90,31 +92,69 @@ export default function LandingPage() {
                                         navigate('/getEarlyAccess')
                                     }}
                                 >
-                                    Get Early Access
+                                    Try it now
+                                </Button>
+                              <Button
+                                    variant="outlined"
+                                    color="neutral"
+                                    size="lg"
+                                    startDecorator={<FaPlayCircle/>}
+                                    onClick={() => {
+                                        setPlaying(true)
+                                    }}
+                                >
+                                    Watch Video
                                 </Button>
                             </Stack>
                             <AspectRatio
                                 ratio="16/10"
                                 sx={(theme) => ({
-                                    width: { xs: '100%', md: '100%' },
+                                    width: { xs: '100%', md: '70%' },
                                 })}
                                 variant="plain"
                             >
-                                <ReactPlayer
-                                    url="https://www.youtube.com/watch?v=yf7_ayfqTCU"
-                                    playing={playVideo}
-                                    width="100%"
-                                    height="100%"
-                                    light="./first_look.png"
-                                    onClickPreview={() => setPlayVideo(true)}
-                                    ref={(player) => setPlayer(player)}
-                                    onEnded={() => {
-                                        setPlayVideo(false)
-                                        if (player) {
-                                            player.showPreview()
-                                        }
-                                    }}
-                                />
+                                
+                                {playing?(
+        <video
+          ref={player}
+          muted
+          autoPlay
+          loop
+          controls
+          >
+            <source
+              src="https://video.devgen.xyz/devgen.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+                                ):(
+                <Sheet sx={{
+                    backgroundImage: 'url(./first_look.png)',
+                    width: '100%',
+                    height: '100%',
+                    backgroundSize: 'cover',
+                    backgroundColor: 'transparent',
+                }}>
+                    <Stack
+  direction="column"
+  justifyContent="center"
+  alignItems="center"
+  spacing={2}
+>
+    <Chip variant="outlined"   onClick={() => setPlaying(true)}
+    >
+    <Typography level='h1'
+      startDecorator={<FaPlayCircle/>}>
+      See Devgen in action
+      </Typography>
+    </Chip>
+</Stack>
+                    
+                </Sheet>
+                    
+                    )}
+        
                             </AspectRatio>
                         </Stack>
                         <Stack

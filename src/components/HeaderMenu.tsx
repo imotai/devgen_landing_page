@@ -11,7 +11,7 @@ import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded'
 import Button from '@mui/joy/Button'
 import { ImGithub } from 'react-icons/im'
 import { useDevgenContext } from './Context'
-import { Avatar } from '@mui/joy'
+import { Avatar, Chip } from '@mui/joy'
 
 function ColorSchemeToggle(props: IconButtonProps) {
     const { onClick, ...other } = props
@@ -68,23 +68,29 @@ export default function HeaderMenu() {
                 <Stack direction="row" spacing={1} alignItems="center">
                     {user && user.accessToken ? (
                         <>
-                            <IconButton>
-                                <Avatar
+                            <Chip color="primary"
+                            variant='solid'
+                            size='lg'
+                            startDecorator={
+                            <Avatar
                                     size="sm"
                                     src={user.avatarUrl}
                                     sx={{}}
                                 ></Avatar>
-                            </IconButton>
+                            }>
+                                {user.login}
+                            </Chip>
                         </>
                     ) : (
-                        <Button
+                        <Chip
                             color="primary"
-                            size="sm"
+                            variant='solid'
+                            size='lg'
                             startDecorator={<ImGithub />}
                             onClick={() => openLoginWindow()}
                         >
                             Sign In
-                        </Button>
+                        </Chip>
                     )}
                 </Stack>
             </Box>
