@@ -57,42 +57,13 @@ export default function HeaderMenu() {
                         <Link href="/">
                             <Typography level="title-md">Home</Typography>
                         </Link>
-                        <Link href="/">
-                            <Typography level="title-md">Download</Typography>
-                        </Link>
                         <Link href="/pricing">
                             <Typography level="title-md">Pricing</Typography>
                         </Link>
                     </Stack>
                 </Box>
                 <Stack direction="row" spacing={1} alignItems="center">
-                    {user && user.accessToken ? (
-                        <>
-                            <Chip 
-                            color="neutral"
-                            variant="outlined"
-                            size='lg'
-                            startDecorator={
-                            <Avatar
-                                    size="sm"
-                                    src={user.avatarUrl}
-                                    sx={{}}
-                                ></Avatar>
-                            }>
-                                {user.login}
-                            </Chip>
-                        </>
-                    ) : (
-                        <Chip
-                            color="primary"
-                            variant='solid'
-                            size='lg'
-                            startDecorator={<ImGithub />}
-                            onClick={() => openLoginWindow()}
-                        >
-                            Sign In
-                        </Chip>
-                    )}
+                    
                 </Stack>
             </Box>
         </>
