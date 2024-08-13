@@ -12,7 +12,6 @@ import Button from '@mui/joy/Button'
 import { useDevgenContext } from './Context'
 import { joinWaitList, Client } from 'devgen-sdk'
 
-
 export default function GetEarlyAccessPage() {
     const afterLoginSend = React.useRef(false)
     const { user, client, openLoginWindow } = useDevgenContext()

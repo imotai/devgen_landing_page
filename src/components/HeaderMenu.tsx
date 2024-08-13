@@ -62,9 +62,7 @@ export default function HeaderMenu() {
                         </Link>
                     </Stack>
                 </Box>
-                <Stack direction="row" spacing={1} alignItems="center">
-                    
-                </Stack>
+                <Stack direction="row" spacing={1} alignItems="center"></Stack>
             </Box>
         </>
     )

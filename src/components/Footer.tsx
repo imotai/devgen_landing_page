@@ -7,7 +7,7 @@ import XCopilotLogo from './XCopilotLogo'
 import { ImGithub } from 'react-icons/im'
 import { useDevgenContext } from './Context'
 import { Chip } from '@mui/joy'
-import { GoLinkExternal } from "react-icons/go"
+import { GoLinkExternal } from 'react-icons/go'
 
 export default function FooterMenu() {
     const { user, openLoginWindow } = useDevgenContext()
@@ -23,17 +23,17 @@ export default function FooterMenu() {
             >
                 <Box sx={{ gap: 2, display: 'flex', alignItems: 'center' }}>
                     <XCopilotLogo />
-                    <Link href="/privacy">
-                        Privacy
-                    </Link>
+                    <Link href="/privacy">Privacy</Link>
                 </Box>
                 <Stack direction="row" spacing={1} alignItems="center">
-                <Link href="https://github.com/getdevgen/devgen" startDecorator={<ImGithub/>}
-                endDecorator={<GoLinkExternal/>}
-                    target="_blank"
-                >  
-                    Github
-                 </Link>
+                    <Link
+                        href="https://github.com/getdevgen/devgen"
+                        startDecorator={<ImGithub />}
+                        endDecorator={<GoLinkExternal />}
+                        target="_blank"
+                    >
+                        Github
+                    </Link>
                 </Stack>
             </Box>
         </>

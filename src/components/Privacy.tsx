@@ -1,5 +1,3 @@
-
-
 import * as React from 'react'
 import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
@@ -9,9 +7,7 @@ import MarkdownPreview from '@uiw/react-markdown-preview'
 
 import FooterMenu from './Footer'
 
-
 export default function PrivacyPage() {
-
     const content = `
 
 ## Privacy Policy for devgen
@@ -109,59 +105,61 @@ Website: devgen.xyz
 `
     return (
         <Box
-        sx={(theme) => ({
-            width: { xs: '100%', md: '60vw' },
-            display: 'flex',
-            mx: 'auto',
-        })}
-    >
+            sx={(theme) => ({
+                width: { xs: '100%', md: '60vw' },
+                display: 'flex',
+                mx: 'auto',
+            })}
+        >
             <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    width: '100%',
+                }}
+            >
+                <HeaderMenu />
+                <Box
+                    component="main"
                     sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
                         width: '100%',
                     }}
                 >
-                    <HeaderMenu />
-                    <Box
-                        component="main"
+                    <Stack
+                        direction="column"
+                        justifyContent="center"
+                        alignItems="center"
+                        spacing={1}
                         sx={{
-                            width: '100%',
+                            mx: 'auto',
+                            mt: 10,
+                            mb: 10,
+                            textAlign: 'center',
                         }}
                     >
-                        <Stack
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center"
-                            spacing={1}
-                            sx={{
-                                mx: 'auto',
-                                mt: 10,
-                                mb: 10,
-                                textAlign: 'center',
-                            }}
+                        <Typography
+                            level="h1"
+                            fontWeight="xl"
+                            fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                         >
-                            <Typography
-                                level="h1"
-                                fontWeight="xl"
-                                fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
-                            >
-                                <Typography>Privacy Policy</Typography>
-                            </Typography>
-                        </Stack>
-                        <MarkdownPreview source={content}  style={{
+                            <Typography>Privacy Policy</Typography>
+                        </Typography>
+                    </Stack>
+                    <MarkdownPreview
+                        source={content}
+                        style={{
                             backgroundColor: 'transparent',
                             textWrap: 'wrap',
-                        }} />
-                    </Box>
-                    <Box component="footer" sx={{ py: 3 }}>
-                        <FooterMenu/>
-                        <Typography level="body-xs" textAlign="center">
-                            ©devgen {new Date().getFullYear()}
-                        </Typography>
-                    </Box>
+                        }}
+                    />
+                </Box>
+                <Box component="footer" sx={{ py: 3 }}>
+                    <FooterMenu />
+                    <Typography level="body-xs" textAlign="center">
+                        ©devgen {new Date().getFullYear()}
+                    </Typography>
+                </Box>
             </Box>
         </Box>
     )
-
 }

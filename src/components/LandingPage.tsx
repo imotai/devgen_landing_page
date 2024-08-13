@@ -4,7 +4,7 @@ import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
 import { useAsyncFn } from 'react-use'
 
-import { FaPlayCircle } from "react-icons/fa"
+import { FaPlayCircle } from 'react-icons/fa'
 import AspectRatio from '@mui/joy/AspectRatio'
 import HeaderMenu from './HeaderMenu'
 import Button from '@mui/joy/Button'
@@ -13,8 +13,7 @@ import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import { Chip, IconButton, Sheet } from '@mui/joy'
 import FooterMenu from './Footer'
-import { GoLinkExternal } from "react-icons/go"
-
+import { GoLinkExternal } from 'react-icons/go'
 
 export default function LandingPage() {
     const navigate = useNavigate()
@@ -93,19 +92,20 @@ export default function LandingPage() {
                                     size="lg"
                                     startDecorator={<FaChrome />}
                                     onClick={() => {
-                                        window.location.href = 'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en'
+                                        window.open(
+                                            'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
+                                            '_blank'
+                                        )
                                     }}
-                                    endDecorator={
-                                        <GoLinkExternal/>
-                                    }
+                                    endDecorator={<GoLinkExternal />}
                                 >
                                     Add to Chrome
                                 </Button>
-                              <Button
+                                <Button
                                     variant="outlined"
                                     color="neutral"
                                     size="lg"
-                                    startDecorator={<FaPlayCircle/>}
+                                    startDecorator={<FaPlayCircle />}
                                     onClick={() => {
                                         setPlaying(true)
                                     }}
@@ -120,49 +120,53 @@ export default function LandingPage() {
                                 })}
                                 variant="plain"
                             >
-                                
-                                {playing?(
-        <video
-          ref={player}
-          muted
-          autoPlay
-          loop
-          controls
-          >
-            <source
-              src="https://video.devgen.xyz/devgen.mp4"
-              type="video/mp4"
-            />
-          </video>
-
-                                ):(
-                <Sheet sx={{
-                    backgroundImage: 'url(./first_look.png)',
-                    width: '100%',
-                    height: '100%',
-                    backgroundSize: 'cover',
-                    backgroundColor: 'transparent',
-                }}>
-                    <Stack
-  direction="column"
-  justifyContent="center"
-  alignItems="center"
-  spacing={2}
->
-    <Chip variant="outlined"   onClick={() => setPlaying(true)}
-    >
-    <Typography level='h2'
-      startDecorator={<FaPlayCircle/>}>
-      See Devgen in action
-      </Typography>
-    </Chip>
-</Stack>
-                    
-                </Sheet>
-                    
-                    )}
-        
- </AspectRatio>
+                                {playing ? (
+                                    <video
+                                        ref={player}
+                                        muted
+                                        autoPlay
+                                        loop
+                                        controls
+                                    >
+                                        <source
+                                            src="https://video.devgen.xyz/devgen.mp4"
+                                            type="video/mp4"
+                                        />
+                                    </video>
+                                ) : (
+                                    <Sheet
+                                        sx={{
+                                            backgroundImage:
+                                                'url(./first_look.png)',
+                                            width: '100%',
+                                            height: '100%',
+                                            backgroundSize: 'cover',
+                                            backgroundColor: 'transparent',
+                                        }}
+                                    >
+                                        <Stack
+                                            direction="column"
+                                            justifyContent="center"
+                                            alignItems="center"
+                                            spacing={2}
+                                        >
+                                            <Chip
+                                                variant="outlined"
+                                                onClick={() => setPlaying(true)}
+                                            >
+                                                <Typography
+                                                    level="h2"
+                                                    startDecorator={
+                                                        <FaPlayCircle />
+                                                    }
+                                                >
+                                                    See Devgen in action
+                                                </Typography>
+                                            </Chip>
+                                        </Stack>
+                                    </Sheet>
+                                )}
+                            </AspectRatio>
                         </Stack>
                         <Stack
                             direction="column"
@@ -171,7 +175,7 @@ export default function LandingPage() {
                         ></Stack>
                     </Box>
                     <Box component="footer" sx={{ py: 3 }}>
-                        <FooterMenu/>
+                        <FooterMenu />
                         <Typography level="body-xs" textAlign="center">
                             ©devgen {new Date().getFullYear()}
                         </Typography>
