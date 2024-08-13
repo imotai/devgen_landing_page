@@ -93,7 +93,7 @@ export default function LandingPage() {
                                     size="lg"
                                     startDecorator={<FaChrome />}
                                     onClick={() => {
-                                        window.location.href = 'https://chromewebstore.google.com/detail/iglkjhingcdlfanjlokiodgfcllmcfoc/preview?hl=en&authuser=0'
+                                        window.location.href = 'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en'
                                     }}
                                     endDecorator={
                                         <GoLinkExternal/>
