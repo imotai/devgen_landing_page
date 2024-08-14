@@ -2,12 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
-import { useDevgenContext } from './Context'
-import { base64UrlDecode } from '../utils'
 import CircularProgress from '@mui/joy/CircularProgress'
 export default function LoginPage() {
     const mounted = useRef(false)
-    const { login, loginState } = useDevgenContext()
     useEffect(() => {
         if (!mounted.current) {
             mounted.current = true
@@ -16,11 +13,6 @@ export default function LoginPage() {
             const code = urlParams.get('code')
             const state = urlParams.get('state')
             if (code && state) {
-                const strState = base64UrlDecode(state)
-                const jsonState = JSON.parse(strState)
-                if (jsonState.platform === 'site') {
-                    login(code, jsonState.provider)
-                }
             }
         }
     })
@@ -28,7 +20,7 @@ export default function LoginPage() {
         <>
             <Box
                 sx={(theme) => ({
-                    width: { xs: '100%', md: '60vw' },
+                    width: '100%',
                     display: 'flex',
                     mx: 'auto',
                 })}
