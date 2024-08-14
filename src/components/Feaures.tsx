@@ -43,9 +43,11 @@ export default function FeaturesPage() {
                             }}
                         >
                             <Box>
+
                             <Typography level="h1" textAlign={'center'}>
                                 Repository Q&A
                             </Typography>
+
                             <Typography level="body-md"></Typography>
                             <Typography
                                 fontSize="xl"

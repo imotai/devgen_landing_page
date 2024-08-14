@@ -37,7 +37,7 @@ export default function HeroBanner() {
                     fontWeight="xl"
                     fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                 >
-                    Devgen:The Github AI Assistant for You
+                    Devgen:The AI Assistant for Github
                 </Typography>
                 <Typewriter
                     options={{
