@@ -37,7 +37,7 @@ export default function HeroBanner() {
                     fontWeight="xl"
                     fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
                 >
-                    Devgen:The AI Assistant for Github
+                    Devgen:Your Github AI Assistant
                 </Typography>
                 <Typewriter
                     options={{
@@ -97,7 +97,7 @@ export default function HeroBanner() {
             </Stack>
             <Stack
                 sx={(theme) => ({
-                    width: { xs: '100%', md: '50%', lg: '40%' },
+                    width: { xs: '100%', md: '45%', lg: '35%' },
                 })}
                 justifyContent="flex-start"
             >

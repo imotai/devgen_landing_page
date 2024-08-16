@@ -80,7 +80,8 @@ export default function FeaturesPage() {
                     </Sheet>
                     <Stack
                         sx={(themes) => ({
-                            width: { xs: '100%', md: '30%', lg: '30%' },
+                            width: { xs: '100%', md: '20%', lg: '20%' },
+                            mx: 'auto',
                         })}
                     >
                         <AspectRatio
@@ -154,7 +155,7 @@ export default function FeaturesPage() {
                     </Sheet>
                     <Stack
                         sx={(themes) => ({
-                            width: { xs: '100%', md: '30%', lg: '30%' },
+                            width: { xs: '100%', md: '20%', lg: '20%' },
                         })}
                     >
                         <AspectRatio

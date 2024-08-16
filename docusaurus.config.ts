@@ -86,7 +86,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs',
-              to: '/docs/intro',
+              to: '/docs/getting_started',
             },
             {
               label: 'Privacy Policy',
