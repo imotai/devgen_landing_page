@@ -58,7 +58,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: true,
         respectPrefersColorScheme: true,
         },
     navbar: {
@@ -120,7 +120,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/getdevgen/devgen',
             },
           ],
         },

@@ -1,6 +1,4 @@
 import * as React from 'react'
-import Layout from '@theme/Layout'
-import Box from '@mui/joy/Box'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Typewriter from 'typewriter-effect'
@@ -43,7 +41,7 @@ export default function HeroBanner() {
                     options={{
                         strings: [
                             'can read Github repository for you',
-                            'can draft code changes for you',
+                            'can draft pull request for you',
                         ],
                         autoStart: true,
                         loop: true,
@@ -57,8 +55,7 @@ export default function HeroBanner() {
                     lineHeight="lg"
                     textAlign={'center'}
                 >
-                    Devgen is a Chrome extension that lets you chat with your
-                    Github repository side by side
+                    Use devgen to read code faster and save time
                 </Typography>
                 <Stack
                     direction="row"

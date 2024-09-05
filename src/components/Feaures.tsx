@@ -13,10 +13,6 @@ export default function FeaturesPage() {
                 spacing={10}
                 sx={{ mx: 'auto', mt: 10, width: '100%', height: '100%', mb: 10 }} 
             >
-                <Typography level="h1" textAlign={'center'} fontWeight="xl">
-                   Features of Devgen
-                </Typography>
-
                 <Stack
                     spacing={2}
                     justifyContent="center"
@@ -27,7 +23,7 @@ export default function FeaturesPage() {
                 >
                     <Sheet
                         sx={(themes) => ({
-                            width: { xs: '100%', md: '30%', lg: '30%' },
+                            width: { xs: '100%'},
                             bgcolor: 'transparent',
                         })}
                         variant="plain"
@@ -35,16 +31,19 @@ export default function FeaturesPage() {
                         <Stack
                             spacing={2}
                             p={2}
-                            direction="column"
+                            sx={(theme) => ({
+                                flexDirection: { xs: 'column', md: 'row', lg: 'row' },
+                                width: '100%',
+                                justifyContent: "space-evenly",
+                                alignItems: "baseline",
+                            })}
                             justifyContent="center"
                             alignItems="center"
-                            sx={{
-                                height: '100%',
-                            }}
                         >
                             <Box>
 
-                            <Typography level="h1" textAlign={'center'}>
+                            <Typography                     startDecorator={<img src="img/chat_qa.png" />}
+  level="h1" textAlign={'center'}>
                                 Repository Q&A
                             </Typography>
 
@@ -75,55 +74,11 @@ export default function FeaturesPage() {
                                     </Typography>
                                 </ListItem>
                             </List>
+
                             </Box>
-                        </Stack>
-                    </Sheet>
-                    <Stack
-                        sx={(themes) => ({
-                            width: { xs: '100%', md: '20%', lg: '20%' },
-                            mx: 'auto',
-                        })}
-                    >
-                        <AspectRatio
-                            variant="outlined"
-                            ratio="1/1"
-                            sx={{
-                                width: '100%',
-                                bgcolor: 'transparent',
-                                borderRadius: 'xs',
-                            }}
-                        >
-                            <img src="./img/q_a.png" alt="Repository Q&A" />
-                        </AspectRatio>
-                    </Stack>
-                </Stack>
-                <Stack
-                    spacing={2}
-                    justifyContent="center"
-                    sx={(theme) => ({
-                        flexDirection: { xs: 'column', md: 'row', lg: 'row' },
-                        width: '100%',
-                    })}
-                >
-                    <Sheet
-                        sx={(themes) => ({
-                            width: { xs: '100%', md: '30%', lg: '30%' },
-                            bgcolor: 'transparent',
-                        })}
-                    >
-                        <Stack
-                            direction="column"
-                            spacing={2}
-                            p={2}
-                            justifyContent="center"
-                            alignItems="center"
-                            sx={{
-                                height:'100%',
-                            }}
-                        >
-                            <Box>
-                            <Typography level="h1" textAlign={'center'}>
-                                Draft code changes
+            <Box>
+                            <Typography level="h1" textAlign={'center'} startDecorator={<img src="img/dev_edit_icon.png"></img>}>
+                                Draft Pull Request
                             </Typography>
                             <Typography level="body-md"></Typography>
                             <Typography
@@ -153,26 +108,7 @@ export default function FeaturesPage() {
 </Box>
                         </Stack>
                     </Sheet>
-                    <Stack
-                        sx={(themes) => ({
-                            width: { xs: '100%', md: '20%', lg: '20%' },
-                        })}
-                    >
-                        <AspectRatio
-                            variant="outlined"
-                            ratio="1/1"
-                            sx={{
-                                width: '100%',
-                                bgcolor: 'transparent',
-                                borderRadius: 'md',
-                            }}
-                        >
-                            <img
-                                src="./img/draft_code_changes.png"
-                                alt="Repository Q&A"
-                            />
-                        </AspectRatio>
-                    </Stack>
+                    
                 </Stack>
             </Stack>
         </>
