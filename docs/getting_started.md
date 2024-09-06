@@ -4,30 +4,30 @@ sidebar_position: 1
 
 # Getting Started
 
-Devgen is an AI assistant for your daily work with Github.
+Devgen is an AI assistant designed to enhance your daily workflow with GitHub.
+<img src="/img/devgen_first_look.png" alt="devgen" />
+
 
 ## Requirements
 
-There are two requirements before using Devgen.
-* You must have a [github](https://github.com/) account
-* You must have permission to access [Github Models](https://github.com/marketplace/models) or have [OpenRouter](https://openrouter.ai/) credits 
-
-add how to apply Github Models document
-add link to show how to buy openrouter credits
+Before using Devgen, ensure you meet the following requirements:
+1. You must have a [GitHub](https://github.com/) account.
+2. You must have either:a) Permission to access [GitHub Models](https://github.com/marketplace/models), or b) Credits for [OpenRouter](https://openrouter.ai/)
 
 ## Setup
 
-* install the [devgen](https://devgen.xyz) from Chrome Web Store
-* use chrome open one of your github repository
-* click the devgen plugin to open the sidepanel
-* login with github
-* Connect to your model provider Github Models or OpenRouter
+1. Install the Devgen extension from the Chrome Web Store.
+2. Open one of your GitHub repositories in Chrome.
+3. Click the DevGen icon to open the sidebar panel.
+4. Log in with your GitHub account.
+5. Connect to your preferred model provider: GitHub Models or OpenRouter
 
-You will see the following interface if everything is ok. 
+If everything is set up correctly, you should see the Devgen interface.
+If you encounter any issues during setup. please create an [issue](https://github.com/getdevgen/devgen/issues/new/choose) on our GitHub repository.
 
-Create an [issue](https://github.com/getdevgen/devgen/issues/new/choose) if you have problem with the setup
+## Try It Out
 
-
-## Have A Try
-
-open devgen and ask some questions about the current Github respository
+Once Devgen is set up:
+1. Navigate to any GitHub repository.
+2. Open the Devgen sidebar.
+3. Ask questions about the current repository to explore its capabilities.
