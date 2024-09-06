@@ -30,4 +30,5 @@ If you encounter any issues during setup. please create an [issue](https://githu
 Once Devgen is set up:
 1. Navigate to any GitHub repository.
 2. Open the Devgen sidebar.
-3. Ask questions about the current repository to explore its capabilities.
+3. Setup the index of the Github repository for the first time
+4. Ask questions about the current repository to explore its capabilities.
