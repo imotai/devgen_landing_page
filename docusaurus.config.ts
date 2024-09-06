@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Devgen:The AI assistant for Github',
+  title: 'Devgen:Your Github AI Assistant',
   tagline: 'Devgen is a Chrome extension that lets you chat with your Github repository side by side.',
   favicon: 'img/favicon.ico',
 

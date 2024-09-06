@@ -115,7 +115,7 @@ export default function HeroBanner() {
                     ) : (
                         <Sheet
                             sx={{
-                                backgroundImage: 'url(./img/first_look.png)',
+                                backgroundImage: 'url(./img/devgen_first_look.png)',
                                 width: '100%',
                                 height: '100%',
                                 backgroundSize: 'cover',
@@ -133,7 +133,7 @@ export default function HeroBanner() {
                                     onClick={() => setPlaying(true)}
                                 >
                                     <Typography
-                                        level="h2"
+                                        level="title-md"
                                         startDecorator={<FaPlayCircle />}
                                     >
                                         See Devgen in action
