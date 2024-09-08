@@ -60,7 +60,7 @@ export default function PricingPage() {
                         <Card size="lg" variant="soft" color="neutral">
                             <Typography level="h2">Free Plan</Typography>
                             <Typography level="title-lg">
-                                Full feature access
+                                Full feature access for Open Source Repository
                             </Typography>
                             <Divider inset="none" />
                             <List size="sm">
@@ -69,7 +69,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        100 Repository Q&A
+                                        Repository Q&A
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -77,7 +77,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        2 Issue Resolution Plan Generation
+                                        Draft Pull Request
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -85,7 +85,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        6 File Diff Generation
+                                        20 Update Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -93,7 +93,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        5 Update Index Requests
+                                        Multi Model Providers Support
                                     </Typography>
                                 </ListItem>
                             </List>

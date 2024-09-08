@@ -7,12 +7,25 @@ sidebar_position: 1
 Devgen is an AI assistant designed to enhance your daily workflow with GitHub.
 <img src="/img/devgen_first_look.png" alt="devgen" />
 
+:::warning
+
+Devgen is currently in **beta version**. We welcome your feedback - please report any bugs you encounter to help us enhance the platform.
+* **[Report Bug](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=bug&projects=&template=bug_report.md&title=bug%3A)**
+* **[Request Feature](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=enhancement&projects=&template=feature_request.md&title=feat%3A+)**
+
+:::
 
 ## Requirements
 
 Before using Devgen, ensure you meet the following requirements:
 1. You must have a [GitHub](https://github.com/) account.
 2. You must have either:a) Permission to access [GitHub Models](https://github.com/marketplace/models), or b) Credits for [OpenRouter](https://openrouter.ai/)
+
+:::tip
+
+The Github Models is free currently
+
+:::
 
 ## Setup
 

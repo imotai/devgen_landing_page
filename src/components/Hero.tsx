@@ -115,7 +115,8 @@ export default function HeroBanner() {
                     ) : (
                         <Sheet
                             sx={{
-                                backgroundImage: 'url(./img/devgen_first_look.png)',
+                                backgroundImage:
+                                    'url(./img/devgen_first_look.png)',
                                 width: '100%',
                                 height: '100%',
                                 backgroundSize: 'cover',
