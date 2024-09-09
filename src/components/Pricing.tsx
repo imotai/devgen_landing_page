@@ -116,13 +116,7 @@ export default function PricingPage() {
                                 >
                                     0
                                 </Typography>
-                                <Button
-                                    color="neutral"
-                                    variant="outlined"
-                                    onClick={() => navigate('/getEarlyAccess')}
-                                >
-                                    Get Access
-                                </Button>
+                                
                             </CardActions>
                         </Card>
                     </Grid>
@@ -140,7 +134,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        2000 Repository Q&A
+                                        Repository Q&A
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -148,7 +142,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        100 Issue Resolution Plan Generation
+                                        Draft Pull Request
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -156,17 +150,18 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        200 File Diff Generation
+                                        100 Update Index Requests
                                     </Typography>
                                 </ListItem>
-                                <ListItem>
+                                            <ListItem>
                                     <ListItemDecorator>
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        50 Update Index Requests
+                                        5 Private Repositories Support
                                     </Typography>
                                 </ListItem>
+
                             </List>
                             <Divider inset="none" />
                             <CardActions>
@@ -185,7 +180,7 @@ export default function PricingPage() {
                                         </Typography>
                                     }
                                 >
-                                    18
+                                    10
                                 </Typography>
                                 <Button color="primary" variant="solid">
                                     Get Started

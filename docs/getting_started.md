@@ -9,9 +9,10 @@ Devgen is an AI assistant designed to enhance your daily workflow with GitHub.
 
 :::warning
 
-Devgen is currently in **beta version**. We welcome your feedback - please report any bugs you encounter to help us enhance the platform.
+Devgen is currently in **beta version**. We welcome your feedback - please report any bugs you encounter to help us improve Devgen
 * **[Report Bug](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=bug&projects=&template=bug_report.md&title=bug%3A)**
 * **[Request Feature](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=enhancement&projects=&template=feature_request.md&title=feat%3A+)**
+* **[Share Your Ideas](https://github.com/getdevgen/devgen/discussions)**
 
 :::
 
@@ -23,17 +24,21 @@ Before using Devgen, ensure you meet the following requirements:
 
 :::tip
 
-The Github Models is free currently
+* The [Github Models](https://github.com/marketplace/models) is free currently
 
 :::
 
+## Installation
+
+* Install the stable version from Chrome Web Store
+* Download from [Github](https://github.com/getdevgen/devgen/releases) and install it using developer mode
+
 ## Setup
 
-1. Install the Devgen extension from the Chrome Web Store.
-2. Open one of your GitHub repositories in Chrome.
-3. Click the DevGen icon to open the sidebar panel.
-4. Log in with your GitHub account.
-5. Connect to your preferred model provider: GitHub Models or OpenRouter
+1. Open one of your GitHub repositories in Chrome.
+2. Click the Devgen icon to open the sidebar panel.
+3. Log in with your GitHub account.
+4. Connect to your preferred model provider: GitHub Models or OpenRouter
 
 If everything is set up correctly, you should see the Devgen interface.
 If you encounter any issues during setup. please create an [issue](https://github.com/getdevgen/devgen/issues/new/choose) on our GitHub repository.
