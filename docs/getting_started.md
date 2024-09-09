@@ -40,8 +40,30 @@ Before using Devgen, ensure you meet the following requirements:
 3. Log in with your GitHub account.
 4. Connect to your preferred model provider: GitHub Models or OpenRouter
 
-If everything is set up correctly, you should see the Devgen interface.
-If you encounter any issues during setup. please create an [issue](https://github.com/getdevgen/devgen/issues/new/choose) on our GitHub repository.
+You can connect the multi Model Provider in the Settings
+
+### Connect to Github Models
+
+Currently Github dose not allow oauth2 token to access the Model API . So you must [create](https://github.com/settings/personal-access-tokens/new) a Github PAT for Github Model if connecting to Github Models. 
+
+
+
+:::warning
+
+For security
+* Do not grant any permission to the Github PAT
+* You are the owner of your PAT. Devgen can not use the PAT again if you delete the PAT from Github
+
+When does the Devgen use your Github PAT?
+1. check the token when you save it to devgen for the first time
+2. use the token when you chat to your Assistant
+
+:::
+
+### Connect to OpenRouter
+
+
+
 
 ## Try It Out
 
