@@ -69,7 +69,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Repository Q&A
+                                       Repository Q&A
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -85,7 +85,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        20 Update Index Requests
+                                        5 Update Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -134,7 +134,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Repository Q&A
+                                       Unlimited Repository Q&A
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -142,7 +142,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Draft Pull Request
+                                        Unlimited Draft Pull Request
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -150,15 +150,15 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        100 Update Index Requests
+                                        50 Update Index Requests
                                     </Typography>
                                 </ListItem>
-                                            <ListItem>
+                                <ListItem>
                                     <ListItemDecorator>
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        5 Private Repositories Support
+                                        Private Repositories Support
                                     </Typography>
                                 </ListItem>
 
