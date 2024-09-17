@@ -4,17 +4,16 @@ sidebar_position: 1
 
 # Getting Started
 
-Devgen is an AI assistant designed to enhance your daily workflow with GitHub.
+Devgen is an AI Assistant that analyzes code, issues, pull requests, and releases to provide insights about your Github repository.
+
 <img src="/img/devgen_first_look.png" alt="devgen" />
 
 :::warning
 
 Devgen is currently in **beta version**. We welcome your feedback - please report any bugs you encounter to help us improve Devgen
-* **[Report Bug](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=bug&projects=&template=bug_report.md&title=bug%3A)**
-* **[Request Feature](https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=enhancement&projects=&template=feature_request.md&title=feat%3A+)**
-* **[Share Your Ideas](https://github.com/getdevgen/devgen/discussions)**
 
 :::
+
 
 ## Requirements
 
@@ -22,26 +21,15 @@ Before using Devgen, ensure you meet the following requirements:
 1. You must have a [GitHub](https://github.com/) account.
 2. You must have either:a) Permission to access [GitHub Models](https://github.com/marketplace/models), or b) Credits for [OpenRouter](https://openrouter.ai/)
 
-:::tip
-
-* The [Github Models](https://github.com/marketplace/models) is free currently
-
-:::
-
-## Installation
-
-* Install the stable version from Chrome Web Store
-* Download from [Github](https://github.com/getdevgen/devgen/releases) and install it using developer mode
-
 ## Setup
 
-1. Open one of your GitHub repositories in Chrome.
+1. Install from [Chrome Web Store](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
+2. Open one of your GitHub repositories in Chrome.
 2. Click the Devgen icon to open the sidebar panel.
 3. Log in with your GitHub account.
-4. Connect to your preferred model provider: GitHub Models or OpenRouter
+4. Connect to your preferred model provider: OpenRouter or Github Models
 
-If everything is set up correctly, you should see the Devgen interface.
-If you encounter any issues during setup. please create an [issue](https://github.com/getdevgen/devgen/issues/new/choose) on our GitHub repository.
+You can connect the multi Model Provider in the Settings
 
 ## Try It Out
 
