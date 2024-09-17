@@ -66,9 +66,21 @@ export default function HeroBanner() {
                     spacing={2}
                     sx={{ mx: 'auto', p: 2 }}
                 >
-                    <Button
+                 <Button
+                        
                         color="primary"
                         variant="solid"
+                        size="lg"
+                        startDecorator={<VscDebugStart />}
+                        onClick={() => {
+                            location.href = '/docs/getting_started'
+                        }}
+                    >
+                        Getting Started
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        color="neutral"
                         size="lg"
                         startDecorator={<FaChrome />}
                         onClick={() => {
@@ -81,17 +93,7 @@ export default function HeroBanner() {
                     >
                         Add to Chrome
                     </Button>
-                    <Button
-                        variant="outlined"
-                        color="neutral"
-                        size="lg"
-                        startDecorator={<VscDebugStart />}
-                        onClick={() => {
-                            location.href = '/docs/getting_started'
-                        }}
-                    >
-                        Getting Started
-                    </Button>
+                   
                 </Stack>
             </Stack>
             <Stack

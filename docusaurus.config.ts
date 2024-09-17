@@ -72,8 +72,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
           sidebarId:'tutorialSidebar',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        }
       ],
     },
     footer: {
