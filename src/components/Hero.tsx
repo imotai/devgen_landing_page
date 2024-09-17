@@ -42,7 +42,7 @@ export default function HeroBanner() {
                 <Typewriter
                     options={{
                         strings: [
-                            'can read Github repository for you',
+                            'can read large codebase for you',
                             'can draft pull request for you',
                         ],
                         autoStart: true,
@@ -57,7 +57,7 @@ export default function HeroBanner() {
                     lineHeight="lg"
                     textAlign={'center'}
                 >
-                    Use devgen to read code faster and save time
+                    Use devgen to read large codebase faster and save time
                 </Typography>
                 <Stack
                     direction="row"
