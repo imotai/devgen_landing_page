@@ -3,7 +3,6 @@ import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
 import { AspectRatio, List, ListItem, Sheet } from '@mui/joy'
-import { themes } from 'prism-react-renderer'
 
 export default function FeaturesPage() {
     return (
@@ -105,7 +104,7 @@ export default function FeaturesPage() {
                                     textColor="text.secondary"
                                     lineHeight="lg"
                                 >
-                                    Enhance your github development process
+                                    Rapidly Launch GitHub Issues
                                 </Typography>
                                 <List marker="disc">
                                     <ListItem>
@@ -115,13 +114,17 @@ export default function FeaturesPage() {
                                     </ListItem>
                                     <ListItem>
                                         <Typography fontSize="xl">
-                                            Propose targeted modifications
+                                            Instantly initiate new issues with preliminary code changes
                                         </Typography>
                                     </ListItem>
                                     <ListItem>
                                         <Typography fontSize="xl">
-                                            Accelerate code review and
-                                            collaboration
+                                            Enable early feedback and collaborative refinement
+                                        </Typography>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Typography fontSize="xl">
+                                            Accelerate the transition from idea to implementation"
                                         </Typography>
                                     </ListItem>
                                 </List>

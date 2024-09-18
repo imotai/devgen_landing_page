@@ -108,7 +108,7 @@ export default function HeroBanner() {
                     {playing ? (
                         <video ref={player} muted autoPlay loop>
                             <source
-                                src="https://video.devgen.xyz/devgen.mp4"
+                                src="https://xu16qi2h34ro0kh7.public.blob.vercel-storage.com/devgen-ECgUhUVtApSZBw97EwGnzm26Z6NyK1.mp4"
                                 type="video/mp4"
                             />
                         </video>
