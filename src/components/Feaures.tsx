@@ -119,7 +119,7 @@ export default function FeaturesPage() {
                                     </ListItem>
                                     <ListItem>
                                         <Typography fontSize="xl">
-                                            Accelerate the transition from idea to implementation"
+                                            Accelerate the transition from idea to implementation
                                         </Typography>
                                     </ListItem>
                                 </List>
