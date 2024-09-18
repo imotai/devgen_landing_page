@@ -8,6 +8,7 @@ Devgen is an AI Assistant that analyzes code, issues, pull requests, and release
 
 <img src="/img/devgen_first_look.png" alt="devgen" />
 
+[![download](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
 :::note
 
 Devgen is currently in **beta version**.
