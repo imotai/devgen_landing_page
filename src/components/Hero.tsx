@@ -8,6 +8,8 @@ import { FaChrome } from 'react-icons/fa'
 import { FaPlayCircle } from 'react-icons/fa'
 import { Chip, IconButton, Sheet } from '@mui/joy'
 import AspectRatio from '@mui/joy/AspectRatio'
+import { VscDebugStart } from "react-icons/vsc"
+
 
 export default function HeroBanner() {
     const player = React.useRef(null)
@@ -64,9 +66,21 @@ export default function HeroBanner() {
                     spacing={2}
                     sx={{ mx: 'auto', p: 2 }}
                 >
-                    <Button
+                 <Button
+                        
                         color="primary"
                         variant="solid"
+                        size="lg"
+                        startDecorator={<VscDebugStart />}
+                        onClick={() => {
+                            location.href = '/docs/getting_started'
+                        }}
+                    >
+                        Getting Started
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        color="neutral"
                         size="lg"
                         startDecorator={<FaChrome />}
                         onClick={() => {
@@ -79,17 +93,7 @@ export default function HeroBanner() {
                     >
                         Add to Chrome
                     </Button>
-                    <Button
-                        variant="outlined"
-                        color="neutral"
-                        size="lg"
-                        startDecorator={<FaPlayCircle />}
-                        onClick={() => {
-                            setPlaying(true)
-                        }}
-                    >
-                        Watch Video
-                    </Button>
+                   
                 </Stack>
             </Stack>
             <Stack
