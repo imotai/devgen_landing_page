@@ -109,11 +109,6 @@ export default function FeaturesPage() {
                                 <List marker="disc">
                                     <ListItem>
                                         <Typography fontSize="xl">
-                                            Rapidly identify issue context
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography fontSize="xl">
                                             Instantly initiate new issues with preliminary code changes
                                         </Typography>
                                     </ListItem>
