@@ -8,10 +8,9 @@ type Props = WrapperProps<typeof ColorModeToggleType>
 
 export default function ColorModeToggleWrapper(props: Props): JSX.Element {
     const { setMode } = useColorScheme()
-    const { value } = props
     React.useEffect(() => {
-        setMode(value)
-    }, [value])
+        setMode('dark')
+    }, [])
     return (
         <>
             <ColorModeToggle {...props} />
