@@ -58,7 +58,7 @@ const config: Config = {
     colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
         },
     navbar: {
       title: 'Devgen',
@@ -72,7 +72,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
           sidebarId:'tutorialSidebar',
-        }
+        },
+        //{to: '/blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {
