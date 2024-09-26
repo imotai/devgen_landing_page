@@ -1,41 +1,45 @@
 ---
 sidebar_position: 1
+title: Getting started with Devgen
 ---
 
 # Getting Started
 
-Devgen is an AI Assistant that analyzes code, issues, pull requests, and releases to provide insights about your Github repository.
+Devgen is an AI Assistant that analyzes code, issues, pull requests, and releases to deliver valuable insights about your GitHub repository. Available as a Chrome extension, it seamlessly integrates with GitHub for side-by-side use.
 
 <img src="/img/devgen_first_look.png" alt="devgen" />
 
-[![download](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
 :::note
-
 Devgen is currently in **beta version**.
-
 :::
 
+## Install
 
-## Requirements
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Before using Devgen, ensure you meet the following requirements:
-1. You must have a [GitHub](https://github.com/) account.
-2. You must have either:a) Permission to access [GitHub Models](https://github.com/marketplace/models), or b) Credits for [OpenRouter](https://openrouter.ai/)
+<Tabs groupId="download">
+  <TabItem value="chrome_web_store" label="Chrome Web Store">
+  [![download](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
+  </TabItem>
+  <TabItem value="github" label="Github">
+  [![GitHub Release](https://img.shields.io/github/v/release/getdevgen/devgen)](https://github.com/getdevgen/devgen/releases)
 
-## Setup
+    You must enable developer mode if you install Devgen from GitHub.
+  </TabItem>
+</Tabs>
 
-1. Install from [Chrome Web Store](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
-2. Open one of your GitHub repositories in Chrome.
-2. Click the Devgen icon to open the sidebar panel.
-3. Log in with your GitHub account.
-4. Connect to your preferred model provider: OpenRouter or Github Models
+## Have A Try 
 
-You can connect the multi Model Provider in the Settings
+Check out these popular indexed projects to explore!
+1. Spring framework: [How to add an authentication interceptor](https://github.com/spring-projects/spring-boot?devgen=how%20to%20add%20an%20auth%20intercepter%3F)
+2. Rust Tokio: [Explain the task scheduler](https://github.com/tokio-rs/tokio?devgen=explain%20the%20task%20scheduler)
+3. Grpc 
+4. Rocksdb
+5. Linux Kernel
 
-## Try It Out
-
-Once Devgen is set up:
-1. Navigate to any GitHub repository.
-2. Open the Devgen sidebar.
-3. Setup the index of the Github repository for the first time
-4. Ask questions about the current repository to explore its capabilities.
+:::tip
+To try the examples above, please follow these steps:
+1. Open one of the above links.
+2. Launch Devgen and click the "Send" button.
+::: 
