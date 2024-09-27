@@ -32,11 +32,9 @@ import TabItem from '@theme/TabItem';
 ## Have A Try 
 
 Check out these popular indexed projects to explore!
-1. Spring framework: [How to add an authentication interceptor](https://github.com/spring-projects/spring-boot?devgen=how%20to%20add%20an%20auth%20intercepter%3F)
+1. Spring framework: [How to add an authentication interceptor](https://github.com/spring-projects/spring-framework?devgen=how%20to%20add%20an%20auth%20intercepter%3F)
 2. Rust Tokio: [Explain the task scheduler](https://github.com/tokio-rs/tokio?devgen=explain%20the%20task%20scheduler)
-3. Grpc 
-4. Rocksdb
-5. Linux Kernel
+3. Linux Kernel: [explain the USB Driver code](https://github.com/torvalds/linux?devgen=explain%20the%20USB%20Driver%20code)
 
 :::tip
 To try the examples above, please follow these steps:
