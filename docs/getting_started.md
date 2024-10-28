@@ -3,8 +3,6 @@ sidebar_position: 1
 title: Getting started with Devgen
 ---
 
-# Getting Started
-
 Devgen is an AI Assistant that analyzes code, issues, pull requests, and releases to deliver valuable insights about your GitHub repository. Available as a Chrome extension, it seamlessly integrates with GitHub for side-by-side use.
 
 <img src="/img/devgen_first_look.png" alt="devgen" />
