@@ -17,9 +17,9 @@ export default function HeroBanner() {
     return (
         <Stack
             sx={(theme) => ({
-                flexDirection: { xs: 'column', md: 'row', lg: 'row' },
+                flexDirection: "column",
                 width: '100%',
-                pt: 10,
+                pt: 15,
             })}
             justifyContent="center"
             alignItems="center"
@@ -27,37 +27,27 @@ export default function HeroBanner() {
             <Stack
                 direction="column"
                 sx={(theme) => ({
-                    width: { xs: '100%', md: '50%', lg: '40%' },
+                    width: "100%"
                 })}
                 justifyContent="flex-end"
             >
                 <Typography
-                    level="h1"
                     textAlign={'center'}
                     fontWeight="xl"
-                    fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
-                >
-                    Devgen:Your Github AI Assistant
-                </Typography>
-                <Typewriter
-                    options={{
-                        strings: [
-                            'can read large codebase for you',
-                            'can draft pull request for you',
-                        ],
-                        autoStart: true,
-                        loop: true,
-                        delay: 120,
-                        deleteSpeed: 10,
+                    fontSize="60px"
+                    sx={{
+                        fontFamily: 'Space Grotesk, sans-serif',
                     }}
-                />
+                >
+                    Reading large codebases made easy
+                </Typography>
                 <Typography
                     fontSize="lg"
                     textColor="text.secondary"
                     lineHeight="lg"
                     textAlign={'center'}
                 >
-                    Use devgen to read large codebase faster and save time
+                    Devgen is a codebase research assistant that helps you read large codebases with ease.
                 </Typography>
                 <Stack
                     direction="row"
@@ -98,7 +88,8 @@ export default function HeroBanner() {
             </Stack>
             <Stack
                 sx={(theme) => ({
-                    width: { xs: '100%', md: '45%', lg: '35%' },
+                    width: { xs: '100%', md: '60%', lg: '50%' },
+                    mt:5
                 })}
                 justifyContent="flex-start"
             >
@@ -136,9 +127,10 @@ export default function HeroBanner() {
                                 <Chip
                                     variant="outlined"
                                     onClick={() => setPlaying(true)}
+                                    size='lg'
                                 >
                                     <Typography
-                                        level="title-md"
+                                        level="title-lg"
                                         startDecorator={<FaPlayCircle />}
                                     >
                                         See Devgen in action

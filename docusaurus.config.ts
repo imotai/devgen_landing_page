@@ -67,13 +67,14 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {to: '/pricing', label: 'Pricing', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
           position: 'left',
           label: 'Docs',
           sidebarId:'tutorialSidebar',
         },
-        //{to: '/blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {

@@ -13,6 +13,13 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
 import Grid from '@mui/joy/Grid'
 import Button from '@mui/joy/Button'
 import Stack from '@mui/joy/Stack'
+import { GoLinkExternal } from 'react-icons/go'
+import { FaChrome } from 'react-icons/fa'
+import Accordion from '@mui/joy/Accordion'
+import AccordionDetails from '@mui/joy/AccordionDetails'
+import AccordionSummary from '@mui/joy/AccordionSummary'
+import AccordionGroup from '@mui/joy/AccordionGroup'
+import { Chip } from '@mui/joy'
 
 export default function PricingPage() {
     return (
@@ -21,6 +28,7 @@ export default function PricingPage() {
                 component="main"
                 sx={{
                     width: '100%',
+                    p:1
                 }}
             >
                 <Stack
@@ -58,9 +66,9 @@ export default function PricingPage() {
                 >
                     <Grid xs={12} sm={12} md={4}>
                         <Card size="lg" variant="soft" color="neutral">
-                            <Typography level="h2">Free Plan</Typography>
+                            <Typography level="h2">Free</Typography>
                             <Typography level="title-lg">
-                                Full feature access for Open Source Repository
+                                Try Devgen out for free
                             </Typography>
                             <Divider inset="none" />
                             <List size="sm">
@@ -69,7 +77,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                       Repository Q&A
+                                        200 Fast Chat Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -77,7 +85,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Draft Pull Request
+                                        2 New Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -85,7 +93,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        5 Update Index Requests
+                                        Unlimited Update Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -93,7 +101,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Multi Model Providers Support
+                                        Up to 4k tokens per request
                                     </Typography>
                                 </ListItem>
                             </List>
@@ -110,20 +118,36 @@ export default function PricingPage() {
                                             fontSize="sm"
                                             textColor="text.tertiary"
                                         >
-                                            month
+                                            / month
                                         </Typography>
                                     }
                                 >
                                     0
                                 </Typography>
-                                
+                                <Button
+                        variant="outlined"
+                        color="neutral"
+                        startDecorator={<FaChrome />}
+                        onClick={() => {
+                            window.open(
+                                'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
+                                '_blank'
+                            )
+                        }}
+                        endDecorator={<GoLinkExternal />}
+                    >
+                        Download
+                    </Button>
                             </CardActions>
                         </Card>
                     </Grid>
 
                     <Grid xs={12} sm={12} md={4}>
                         <Card size="lg" color="primary" variant="soft">
-                            <Typography level="h2">Pro Plan</Typography>
+                             <Chip size="sm" color="primary"  variant="outlined">
+                                MOST POPULAR
+                            </Chip>
+                            <Typography level="h2">Pro</Typography>
                             <Typography level="title-lg">
                                 Ideal for daily work
                             </Typography>
@@ -134,7 +158,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                       Unlimited Repository Q&A
+                                        Unlimited Fast Chat Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -142,7 +166,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Unlimited Draft Pull Request
+                                        100 Advanced Chat Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -150,7 +174,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        50 Update Index Requests
+                                        10 New Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -158,10 +182,17 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Private Repositories Support
+                                        Unlimited Update Index Requests
                                     </Typography>
                                 </ListItem>
-
+                                 <ListItem>
+                                    <ListItemDecorator>
+                                        <CheckCircle />
+                                    </ListItemDecorator>
+                                    <Typography level="body-sm">
+                                        Up to 8k tokens per request
+                                    </Typography>
+                                </ListItem>
                             </List>
                             <Divider inset="none" />
                             <CardActions>
@@ -176,7 +207,7 @@ export default function PricingPage() {
                                             fontSize="sm"
                                             textColor="text.tertiary"
                                         >
-                                            month
+                                            / month
                                         </Typography>
                                     }
                                 >
@@ -244,6 +275,91 @@ export default function PricingPage() {
                         </Card>
                     </Grid>
                 </Grid>
+
+                <Stack
+                    direction="column"
+                    spacing={2}
+                    sx={{
+                        width: { sx: '100%', md: '80%', lg: '80%' },
+                        mx: 'auto',
+                        mt: 8,
+                        mb: 10,
+                    }}
+                >
+                    <Typography
+                        level="h2"
+                        fontSize="xl2"
+                        sx={{ textAlign: 'center', mb: 4 }}
+                    >
+                        FAQ
+                    </Typography>
+
+                    <AccordionGroup size="lg" variant="soft" sx={{p:1,  width: '100%', borderRadius: 'md' }}>
+                        <Accordion>
+                            <AccordionSummary>
+                                <Typography level="title-lg">
+                                    What is the difference between Fast Chat and Advanced Chat?
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography level="body-md">
+                                    Fast Chat provides quick responses for simple queries, while Advanced Chat offers more comprehensive analysis and can handle complex code understanding tasks.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary>
+                                <Typography level="title-lg">
+                                    What are Index Requests and how do they work?
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography level="body-md">
+                                    Index Requests allow you to create a searchable index of your codebase. Once indexed, the Devgen can understand your project's structure, dependencies, and code patterns to provide more accurate and context-aware responses to your questions.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                        <Accordion>
+                            <AccordionSummary>
+                                <Typography level="title-lg">
+                                    Which models are supported?
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography level="body-md">
+                                    We currently support <Link endDecorator={<GoLinkExternal />} href="https://openai.com/api/" target="_blank">OpenAI</Link> and <Link endDecorator={<GoLinkExternal />} href="https://anthropic.com/api" target="_blank">Anthropic</Link> models.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary>
+                                <Typography level="title-lg">
+                                    Can I cancel my plan?
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography level="body-md">
+                                    Yes, you can cancel your plan at any time. Your billing will be adjusted accordingly on your next billing cycle.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary>
+                                <Typography level="title-lg">
+                                    What kind of support do you offer?
+                                </Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography level="body-md">
+                                    We offer support through our <Link endDecorator={<GoLinkExternal />} href="https://github.com/getdevgen/devgen/issues" target="_blank">GitHub Issues</Link> for all plans. Enterprise customers receive priority support and dedicated account management.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </AccordionGroup>
+                </Stack>
             </Box>
         </>
     )
