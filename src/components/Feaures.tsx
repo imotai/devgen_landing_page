@@ -2,131 +2,122 @@ import * as React from 'react'
 import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
-import { AspectRatio, List, ListItem, Sheet } from '@mui/joy'
+import { AspectRatio, Card, Grid, List, ListItem, Sheet } from '@mui/joy'
+import {
+    MessageCircleQuestion,
+    CircleDot,
+    GitPullRequestArrow,
+    Code,
+} from 'lucide-react'
 
 export default function FeaturesPage() {
     return (
         <>
             <Stack
                 direction="column"
-                spacing={10}
+                spacing={2}
                 sx={{
-                    mx: 'auto',
-                    mt: 10,
+                    mt: 5,
                     width: '100%',
-                    height: '100%',
-                    mb: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
                 }}
             >
-                <Stack
+                <Typography textAlign={'center'} level="h1">
+                    Devgen at a Glance
+                </Typography>
+                <Grid
+                    container
                     spacing={2}
-                    justifyContent="center"
                     sx={(theme) => ({
-                        flexDirection: { xs: 'column', md: 'row', lg: 'row' },
-                        width: '100%',
+                        width: { sx: '100%', md: '60%', lg: '60%' },
+                        mx: 'auto',
                     })}
                 >
-                    <Sheet
-                        sx={(themes) => ({
-                            width: { xs: '100%' },
-                            bgcolor: 'transparent',
-                        })}
-                        variant="plain"
-                    >
-                        <Stack
-                            spacing={2}
-                            p={2}
-                            sx={(theme) => ({
-                                flexDirection: {
-                                    xs: 'column',
-                                    md: 'row',
-                                    lg: 'row',
-                                },
-                                width: '100%',
-                                justifyContent: 'space-evenly',
-                                alignItems: 'baseline',
-                            })}
-                            justifyContent="center"
-                            alignItems="center"
+                    <Grid xs={12} sm={12} md={6}>
+                        <Sheet
+                            variant="outlined"
+                            sx={{ p: 2, borderRadius: 'md' }}
                         >
-                            <Box>
-                                <Typography
-                                    startDecorator={
-                                        <img src="img/chat_qa.png" />
-                                    }
-                                    level="h1"
-                                    textAlign={'center'}
-                                >
-                                    Repository Q&A
-                                </Typography>
+                            <MessageCircleQuestion size={60} />
+                            <Typography
+                                level="h3"
+                                sx={{ mb: 2 }}
+                                color="primary"
+                            >
+                                Ask Question
+                            </Typography>
+                            <Typography level="body-lg">
+                                Get fast answers to straightforward questions
+                                about the codebase. Devgen searches the codebase
+                                to deliver precise responses instantly.
+                            </Typography>
+                        </Sheet>
+                    </Grid>
 
-                                <Typography level="body-md"></Typography>
-                                <Typography
-                                    fontSize="xl"
-                                    textColor="text.secondary"
-                                    lineHeight="lg"
-                                >
-                                    Get expert insights from your codebase in
-                                    seconds, with
-                                </Typography>
-                                <List marker="disc">
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Seamlessly linked references to code
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Instant access to relevant issues
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Quick navigation to associated pull
-                                            requests
-                                        </Typography>
-                                    </ListItem>
-                                </List>
-                            </Box>
-                            <Box>
-                                <Typography
-                                    level="h1"
-                                    textAlign={'center'}
-                                    startDecorator={
-                                        <img src="img/dev_edit_icon.png"></img>
-                                    }
-                                >
-                                    Draft Pull Request
-                                </Typography>
-                                <Typography level="body-md"></Typography>
-                                <Typography
-                                    fontSize="xl"
-                                    textColor="text.secondary"
-                                    lineHeight="lg"
-                                >
-                                    Rapidly Launch GitHub Issues
-                                </Typography>
-                                <List marker="disc">
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Instantly initiate new issues with preliminary code changes
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Enable early feedback and collaborative refinement
-                                        </Typography>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Typography fontSize="xl">
-                                            Accelerate the transition from idea to implementation
-                                        </Typography>
-                                    </ListItem>
-                                </List>
-                            </Box>
-                        </Stack>
-                    </Sheet>
-                </Stack>
+                    <Grid xs={12} sm={12} md={6}>
+                        <Sheet
+                            variant="outlined"
+                            sx={{ p: 2, borderRadius: 'md' }}
+                        >
+                            <CircleDot size={60} />
+                            <Typography
+                                level="h3"
+                                sx={{ mb: 2 }}
+                                color="primary"
+                            >
+                                Chat with Issue
+                            </Typography>
+                            <Typography level="body-lg">
+                                Effortlessly bring GitHub issues into your chat!
+                                Simply right-click on any issue page, choose
+                                "Add to Chat," and the issue is instantly set up
+                                for discussion.
+                            </Typography>
+                        </Sheet>
+                    </Grid>
+
+                    <Grid xs={12} sm={12} md={6}>
+                        <Sheet
+                            variant="outlined"
+                            sx={{ p: 2, borderRadius: 'md' }}
+                        >
+                            <GitPullRequestArrow size={60} />
+                            <Typography
+                                level="h3"
+                                sx={{ mb: 2 }}
+                                color="primary"
+                            >
+                                Chat with Pull Request
+                            </Typography>
+                            <Typography level="body-lg">
+                                Need to chat about a pull request? Right-click
+                                on any GitHub pull request page, select "Add to
+                                Chat", and add it to the conversation.
+                            </Typography>
+                        </Sheet>
+                    </Grid>
+                    <Grid xs={12} sm={12} md={6}>
+                        <Sheet
+                            variant="outlined"
+                            sx={{ p: 2, borderRadius: 'md' }}
+                        >
+                            <Code size={60} />
+                            <Typography
+                                level="h3"
+                                sx={{ mb: 2 }}
+                                color="primary"
+                            >
+                                Chat with Code File
+                            </Typography>
+                            <Typography level="body-lg">
+                                To discuss specific files, right-click on any
+                                GitHub file page, choose "Add to Chat", and dive
+                                into file-specific details together.
+                            </Typography>
+                        </Sheet>
+                    </Grid>
+                </Grid>
             </Stack>
         </>
     )

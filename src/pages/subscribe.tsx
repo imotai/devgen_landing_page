@@ -7,7 +7,7 @@ export default function Connect(): JSX.Element {
     const { siteConfig } = useDocusaurusContext()
     return (
         <Layout title="subscribe" description="subscribe the Devgen Pro">
-            <SubscribePage/>
+            <SubscribePage />
         </Layout>
     )
 }

@@ -54,7 +54,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/devgen_social_card.png',
+    image: 'img/devgen-social_card.webp',
     colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
@@ -67,8 +67,8 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/pricing', label: 'Pricing', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/pricing', label: 'Pricing', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
           position: 'left',

@@ -1,15 +1,11 @@
 import * as React from 'react'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
-import Typewriter from 'typewriter-effect'
 import Button from '@mui/joy/Button'
-import { GoLinkExternal } from 'react-icons/go'
-import { FaChrome } from 'react-icons/fa'
 import { FaPlayCircle } from 'react-icons/fa'
-import { Chip, IconButton, Sheet } from '@mui/joy'
+import { Chip, Sheet } from '@mui/joy'
 import AspectRatio from '@mui/joy/AspectRatio'
-import { VscDebugStart } from "react-icons/vsc"
-
+import { CircleChevronRight, Chrome, SquareArrowOutUpRight } from 'lucide-react'
 
 export default function HeroBanner() {
     const player = React.useRef(null)
@@ -17,7 +13,7 @@ export default function HeroBanner() {
     return (
         <Stack
             sx={(theme) => ({
-                flexDirection: "column",
+                flexDirection: 'column',
                 width: '100%',
                 pt: 15,
             })}
@@ -27,7 +23,7 @@ export default function HeroBanner() {
             <Stack
                 direction="column"
                 sx={(theme) => ({
-                    width: "100%"
+                    width: '100%',
                 })}
                 justifyContent="flex-end"
             >
@@ -47,24 +43,23 @@ export default function HeroBanner() {
                     lineHeight="lg"
                     textAlign={'center'}
                 >
-                    Devgen is a codebase research assistant that helps you read large codebases with ease.
+                    Devgen is a codebase research assistant that helps you read
+                    large codebases with ease.
                 </Typography>
                 <Stack
                     direction="row"
                     justifyContent="center"
-                    alignItems="baseline"
                     spacing={2}
-                    sx={{ mx: 'auto', p: 2 }}
+                    sx={{ mx: 'auto', p: 2, alignItems: 'stretch' }}
                 >
-                 <Button
-                        
+                    <Button
                         color="primary"
                         variant="solid"
                         size="lg"
-                        startDecorator={<VscDebugStart />}
                         onClick={() => {
                             location.href = '/docs/getting_started'
                         }}
+                        endDecorator={<CircleChevronRight />}
                     >
                         Getting Started
                     </Button>
@@ -72,24 +67,23 @@ export default function HeroBanner() {
                         variant="outlined"
                         color="neutral"
                         size="lg"
-                        startDecorator={<FaChrome />}
+                        startDecorator={<Chrome />}
                         onClick={() => {
                             window.open(
                                 'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
                                 '_blank'
                             )
                         }}
-                        endDecorator={<GoLinkExternal />}
+                        endDecorator={<SquareArrowOutUpRight />}
                     >
                         Add to Chrome
                     </Button>
-                   
                 </Stack>
             </Stack>
             <Stack
                 sx={(theme) => ({
-                    width: { xs: '100%', md: '60%', lg: '50%' },
-                    mt:5
+                    width: { xs: '100%', md: '60%', lg: '60%' },
+                    mt: 5,
                 })}
                 justifyContent="flex-start"
             >
@@ -100,45 +94,15 @@ export default function HeroBanner() {
                     }}
                     variant="plain"
                 >
-                    {playing ? (
-                        <video ref={player} muted autoPlay loop>
-                            <source
-                                src="https://xu16qi2h34ro0kh7.public.blob.vercel-storage.com/devgen-ECgUhUVtApSZBw97EwGnzm26Z6NyK1.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    ) : (
-                        <Sheet
-                            sx={{
-                                backgroundImage:
-                                    'url(./img/devgen_first_look.png)',
-                                width: '100%',
-                                height: '100%',
-                                backgroundSize: 'cover',
-                                backgroundColor: 'transparent',
-                            }}
-                        >
-                            <Stack
-                                direction="column"
-                                justifyContent="center"
-                                alignItems="center"
-                                spacing={2}
-                            >
-                                <Chip
-                                    variant="outlined"
-                                    onClick={() => setPlaying(true)}
-                                    size='lg'
-                                >
-                                    <Typography
-                                        level="title-lg"
-                                        startDecorator={<FaPlayCircle />}
-                                    >
-                                        See Devgen in action
-                                    </Typography>
-                                </Chip>
-                            </Stack>
-                        </Sheet>
-                    )}
+                    <Sheet
+                        sx={{
+                            backgroundImage: 'url(./img/devgen-mini.webp)',
+                            width: '100%',
+                            height: '100%',
+                            backgroundSize: 'cover',
+                            backgroundColor: 'transparent',
+                        }}
+                    ></Sheet>
                 </AspectRatio>
             </Stack>
         </Stack>
