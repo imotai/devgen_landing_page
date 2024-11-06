@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs groupId="download">
   <TabItem value="chrome_web_store" label="Chrome Web Store">
-  [![download](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
+  [![download](/img/webstore.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
   </TabItem>
   <TabItem value="github" label="Github">
   [![GitHub Release](https://img.shields.io/github/v/release/getdevgen/devgen)](https://github.com/getdevgen/devgen/releases)
