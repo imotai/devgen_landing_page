@@ -10,19 +10,8 @@ Devgen is an AI assistant designed to provide deep insights into your GitHub rep
 
 ## Install
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-<Tabs groupId="download">
-  <TabItem value="chrome_web_store" label="Chrome Web Store">
-  [![download](/img/webstore.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
-  </TabItem>
-  <TabItem value="github" label="Github">
-  [![GitHub Release](https://img.shields.io/github/v/release/getdevgen/devgen)](https://github.com/getdevgen/devgen/releases)
-
-    You must enable developer mode if you install Devgen from GitHub.
-  </TabItem>
-</Tabs>
+[![download](/img/webstore.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
 
 ## Have A Try 
 
