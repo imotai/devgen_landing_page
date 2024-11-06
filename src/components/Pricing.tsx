@@ -213,8 +213,19 @@ export default function PricingPage() {
                                 >
                                     10
                                 </Typography>
-                                <Button color="primary" variant="solid">
-                                    Get Started
+                                <Button
+                                    variant="solid"
+                                    color="primary"
+                                    startDecorator={<FaChrome />}
+                                    onClick={() => {
+                                        window.open(
+                                            'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
+                                            '_blank'
+                                        )
+                                    }}
+                                    endDecorator={<GoLinkExternal />}
+                                >
+                                    Subcribe Now
                                 </Button>
                             </CardActions>
                         </Card>
@@ -264,7 +275,7 @@ export default function PricingPage() {
                             <CardActions>
                                 <Link
                                     endDecorator={<KeyboardArrowRight />}
-                                    href="mailto:service@xpie.dev"
+                                    href="https://zw17d2od59n.typeform.com/to/yYZC8230"
                                     target="_blank"
                                 >
                                     <Typography level="title-lg">

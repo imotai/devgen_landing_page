@@ -32,6 +32,7 @@ export default function FeaturesPage() {
                     sx={(theme) => ({
                         width: { sx: '100%', md: '60%', lg: '60%' },
                         mx: 'auto',
+                        alignItems: "stretch",
                     })}
                 >
                     <Grid xs={12} sm={12} md={6}>

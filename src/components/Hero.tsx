@@ -15,7 +15,7 @@ export default function HeroBanner() {
             sx={(theme) => ({
                 flexDirection: 'column',
                 width: '100%',
-                pt: 15,
+                pt: 10,
             })}
             justifyContent="center"
             alignItems="center"
@@ -35,7 +35,7 @@ export default function HeroBanner() {
                         fontFamily: 'Space Grotesk, sans-serif',
                     }}
                 >
-                    Reading large codebases made easy
+                    Reading large codebases <Typography color='primary'>made</Typography> simple
                 </Typography>
                 <Typography
                     fontSize="lg"

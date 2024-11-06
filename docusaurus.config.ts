@@ -67,8 +67,8 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        //{to: '/pricing', label: 'Pricing', position: 'left'},
-        //{to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/pricing', label: 'Pricing', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
           position: 'left',
