@@ -28,7 +28,7 @@ export default function PricingPage() {
                 component="main"
                 sx={{
                     width: '100%',
-                    p:1
+                    p: 1,
                 }}
             >
                 <Stack
@@ -125,26 +125,26 @@ export default function PricingPage() {
                                     0
                                 </Typography>
                                 <Button
-                        variant="outlined"
-                        color="neutral"
-                        startDecorator={<FaChrome />}
-                        onClick={() => {
-                            window.open(
-                                'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
-                                '_blank'
-                            )
-                        }}
-                        endDecorator={<GoLinkExternal />}
-                    >
-                        Download
-                    </Button>
+                                    variant="outlined"
+                                    color="neutral"
+                                    startDecorator={<FaChrome />}
+                                    onClick={() => {
+                                        window.open(
+                                            'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
+                                            '_blank'
+                                        )
+                                    }}
+                                    endDecorator={<GoLinkExternal />}
+                                >
+                                    Download
+                                </Button>
                             </CardActions>
                         </Card>
                     </Grid>
 
                     <Grid xs={12} sm={12} md={4}>
                         <Card size="lg" color="primary" variant="soft">
-                             <Chip size="sm" color="primary"  variant="outlined">
+                            <Chip size="sm" color="primary" variant="outlined">
                                 MOST POPULAR
                             </Chip>
                             <Typography level="h2">Pro</Typography>
@@ -185,7 +185,7 @@ export default function PricingPage() {
                                         Unlimited Update Index Requests
                                     </Typography>
                                 </ListItem>
-                                 <ListItem>
+                                <ListItem>
                                     <ListItemDecorator>
                                         <CheckCircle />
                                     </ListItemDecorator>
@@ -213,8 +213,19 @@ export default function PricingPage() {
                                 >
                                     10
                                 </Typography>
-                                <Button color="primary" variant="solid">
-                                    Get Started
+                                <Button
+                                    variant="solid"
+                                    color="primary"
+                                    startDecorator={<FaChrome />}
+                                    onClick={() => {
+                                        window.open(
+                                            'https://chromewebstore.google.com/detail/devgen-the-ai-assistant-f/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en',
+                                            '_blank'
+                                        )
+                                    }}
+                                    endDecorator={<GoLinkExternal />}
+                                >
+                                    Subcribe Now
                                 </Button>
                             </CardActions>
                         </Card>
@@ -264,7 +275,7 @@ export default function PricingPage() {
                             <CardActions>
                                 <Link
                                     endDecorator={<KeyboardArrowRight />}
-                                    href="mailto:service@xpie.dev"
+                                    href="https://zw17d2od59n.typeform.com/to/yYZC8230"
                                     target="_blank"
                                 >
                                     <Typography level="title-lg">
@@ -294,16 +305,24 @@ export default function PricingPage() {
                         FAQ
                     </Typography>
 
-                    <AccordionGroup size="lg" variant="soft" sx={{p:1,  width: '100%', borderRadius: 'md' }}>
+                    <AccordionGroup
+                        size="lg"
+                        variant="soft"
+                        sx={{ p: 1, width: '100%', borderRadius: 'md' }}
+                    >
                         <Accordion>
                             <AccordionSummary>
                                 <Typography level="title-lg">
-                                    What is the difference between Fast Chat and Advanced Chat?
+                                    What is the difference between Fast Chat and
+                                    Advanced Chat?
                                 </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography level="body-md">
-                                    Fast Chat provides quick responses for simple queries, while Advanced Chat offers more comprehensive analysis and can handle complex code understanding tasks.
+                                    Fast Chat provides quick responses for
+                                    simple queries, while Advanced Chat offers
+                                    more comprehensive analysis and can handle
+                                    complex code understanding tasks.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -311,12 +330,18 @@ export default function PricingPage() {
                         <Accordion>
                             <AccordionSummary>
                                 <Typography level="title-lg">
-                                    What are Index Requests and how do they work?
+                                    What are Index Requests and how do they
+                                    work?
                                 </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography level="body-md">
-                                    Index Requests allow you to create a searchable index of your codebase. Once indexed, the Devgen can understand your project's structure, dependencies, and code patterns to provide more accurate and context-aware responses to your questions.
+                                    Index Requests allow you to create a
+                                    searchable index of your codebase. Once
+                                    indexed, the Devgen can understand your
+                                    project's structure, dependencies, and code
+                                    patterns to provide more accurate and
+                                    context-aware responses to your questions.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -328,7 +353,23 @@ export default function PricingPage() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography level="body-md">
-                                    We currently support <Link endDecorator={<GoLinkExternal />} href="https://openai.com/api/" target="_blank">OpenAI</Link> and <Link endDecorator={<GoLinkExternal />} href="https://anthropic.com/api" target="_blank">Anthropic</Link> models.
+                                    We currently support{' '}
+                                    <Link
+                                        endDecorator={<GoLinkExternal />}
+                                        href="https://openai.com/api/"
+                                        target="_blank"
+                                    >
+                                        OpenAI
+                                    </Link>{' '}
+                                    and{' '}
+                                    <Link
+                                        endDecorator={<GoLinkExternal />}
+                                        href="https://anthropic.com/api"
+                                        target="_blank"
+                                    >
+                                        Anthropic
+                                    </Link>{' '}
+                                    models.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -341,7 +382,9 @@ export default function PricingPage() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography level="body-md">
-                                    Yes, you can cancel your plan at any time. Your billing will be adjusted accordingly on your next billing cycle.
+                                    Yes, you can cancel your plan at any time.
+                                    Your billing will be adjusted accordingly on
+                                    your next billing cycle.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -354,7 +397,17 @@ export default function PricingPage() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography level="body-md">
-                                    We offer support through our <Link endDecorator={<GoLinkExternal />} href="https://github.com/getdevgen/devgen/issues" target="_blank">GitHub Issues</Link> for all plans. Enterprise customers receive priority support and dedicated account management.
+                                    We offer support through our{' '}
+                                    <Link
+                                        endDecorator={<GoLinkExternal />}
+                                        href="https://github.com/getdevgen/devgen/issues"
+                                        target="_blank"
+                                    >
+                                        GitHub Issues
+                                    </Link>{' '}
+                                    for all plans. Enterprise customers receive
+                                    priority support and dedicated account
+                                    management.
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>

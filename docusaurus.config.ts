@@ -54,7 +54,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/devgen_social_card.png',
+    image: 'img/devgen-social_card.webp',
     colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
