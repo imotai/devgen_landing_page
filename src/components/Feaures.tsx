@@ -174,6 +174,22 @@ export default function FeaturesPage() {
                                 GitHub file page, choose "Add to Chat", and dive
                                 into file-specific details together.
                             </Typography>
+                <Link
+                                underline="none"
+                                variant="outlined"
+                                color="neutral"
+                                sx={{
+                                    mt: 2,
+                                    '--Link-gap': '0.5rem',
+                                    pl: 1,
+                                    py: 0.5,
+                                    borderRadius: 'md',
+                                }}
+                                href="/docs/tutorial/chat_with_code_file"
+                                endDecorator={<CircleChevronRight />}
+                            >
+                                Learn More
+                            </Link>
                         </Sheet>
                     </Grid>
                 </Grid>
