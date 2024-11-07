@@ -35,7 +35,8 @@ export default function HeroBanner() {
                         fontFamily: 'Space Grotesk, sans-serif',
                     }}
                 >
-                    Reading large codebases <Typography color='primary'>made</Typography> simple
+                    Reading large codebases{' '}
+                    <Typography color="primary">made</Typography> simple
                 </Typography>
                 <Typography
                     fontSize="lg"
