@@ -4,6 +4,7 @@ import Layout from '@theme/Layout'
 import HeroBanner from '@site/src/components/Hero'
 import FeaturesPage from '@site/src/components/Feaures'
 import { Stack } from '@mui/joy'
+import PricingPage from '../components/Pricing'
 
 export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext()

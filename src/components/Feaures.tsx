@@ -47,7 +47,7 @@ export default function FeaturesPage() {
                 >
                     <Grid xs={12} sm={12} md={6}>
                         <Sheet
-                            variant="outlined"
+                            variant="soft" color="neutral"
                             sx={{ p: 2, borderRadius: 'md' }}
                         >
                             <MessageCircleQuestion size={60} />
@@ -84,7 +84,7 @@ export default function FeaturesPage() {
 
                     <Grid xs={12} sm={12} md={6}>
                         <Sheet
-                            variant="outlined"
+                            variant="soft" color="neutral"
                             sx={{ p: 2, borderRadius: 'md' }}
                         >
                             <CircleDot size={60} />
@@ -122,7 +122,7 @@ export default function FeaturesPage() {
 
                     <Grid xs={12} sm={12} md={6}>
                         <Sheet
-                            variant="outlined"
+                            variant="soft" color="neutral"
                             sx={{ p: 2, borderRadius: 'md' }}
                         >
                             <GitPullRequestArrow size={60} />
@@ -158,7 +158,7 @@ export default function FeaturesPage() {
                     </Grid>
                     <Grid xs={12} sm={12} md={6}>
                         <Sheet
-                            variant="outlined"
+                            variant="soft" color="neutral"
                             sx={{ p: 2, borderRadius: 'md' }}
                         >
                             <Code size={60} />
