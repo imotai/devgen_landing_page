@@ -29,9 +29,9 @@ export default function HeroBanner() {
             >
                 <Typography
                     textAlign={'center'}
-                    fontWeight="xl"
-                    fontSize="60px"
                     sx={{
+                        fontWeight: 'xl',
+                        fontSize: 'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
                         fontFamily: 'Space Grotesk, sans-serif',
                     }}
                 >
@@ -51,7 +51,7 @@ export default function HeroBanner() {
                     direction="row"
                     justifyContent="center"
                     spacing={2}
-                    sx={{ mx: 'auto', p: 2, alignItems: 'stretch' }}
+                    sx={{ mx: 'auto', p: 2, alignItems: 'stretch', mt: 2 }}
                 >
                     <Button
                         color="primary"
@@ -85,6 +85,7 @@ export default function HeroBanner() {
                 sx={(theme) => ({
                     width: { xs: '100%', md: '60%', lg: '60%' },
                     mt: 5,
+                    p: 1,
                 })}
                 justifyContent="flex-start"
             >
@@ -92,18 +93,11 @@ export default function HeroBanner() {
                     ratio="16/10"
                     sx={{
                         width: '100%',
+                        borderRadius: 'lg',
                     }}
                     variant="plain"
                 >
-                    <Sheet
-                        sx={{
-                            backgroundImage: 'url(./img/devgen-mini.webp)',
-                            width: '100%',
-                            height: '100%',
-                            backgroundSize: 'cover',
-                            backgroundColor: 'transparent',
-                        }}
-                    ></Sheet>
+                    <img src="/img/overview-min.jpg" />
                 </AspectRatio>
             </Stack>
         </Stack>
