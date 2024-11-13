@@ -15,26 +15,24 @@ export default function Player(props: PlayerProps) {
     const [isLoading, setIsLoading] = useState(false)
     return (
         <Card color="neutral" variant="outlined">
-            {
-                isLoading && (
-                    <Stack
-                        sx={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: 'rgba(0,0,0,0.5)',
-                            zIndex: 1000
-                        }}
-                    >
-                        <CircularProgress/>
-                    </Stack>
-                )
-            }
+            {isLoading && (
+                <Stack
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        backgroundColor: 'rgba(0,0,0,0.5)',
+                        zIndex: 1000,
+                    }}
+                >
+                    <CircularProgress size="lg" />
+                </Stack>
+            )}
             <AspectRatio
                 sx={{
                     width: '100%',

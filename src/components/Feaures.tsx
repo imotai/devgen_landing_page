@@ -3,16 +3,10 @@ import Box from '@mui/joy/Box'
 import Typography from '@mui/joy/Typography'
 import Stack from '@mui/joy/Stack'
 import {
-    AspectRatio,
     Button,
-    Card,
     Grid,
     List,
     ListItem,
-    Sheet,
-    Link,
-    CardCover,
-    CardContent,
     Badge,
 } from '@mui/joy'
 import {
@@ -23,7 +17,7 @@ import {
     PencilRuler,
     Bug,
     ScanSearch,
-    GraduationCap
+    GraduationCap,
 } from 'lucide-react'
 import Player from './Player'
 
@@ -139,9 +133,12 @@ export default function FeaturesPage() {
                                 sx={{
                                     pl: 1,
                                 }}
+                                onClick={() => {
+                                    location.href = '/docs/getting_started'
+                                }}
                                 endDecorator={<CircleChevronRight />}
                             >
-                                Learn More
+                                Start Now
                             </Button>
                         </Stack>
                     </Grid>
@@ -179,21 +176,27 @@ export default function FeaturesPage() {
                             >
                                 Finding Context, Solving Your Issue
                             </Typography>
-                            <Badge color="warning" variant="solid" badgeContent="beta">
-                            <Typography
-                                level="h3"
-                                sx={{
-                                    fontWeight: 'xl',
-                                    fontSize:
-                                        'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
-                                    fontFamily: 'Space Grotesk, sans-serif',
-                                    mb: 2,
-                                }}
+                            <Badge
+                                color="warning"
+                                variant="solid"
+                                badgeContent="beta"
                             >
-                                Chat with{' '}
-                                <Typography color="primary">Issue</Typography>
-                            </Typography>
-                                </Badge>
+                                <Typography
+                                    level="h3"
+                                    sx={{
+                                        fontWeight: 'xl',
+                                        fontSize:
+                                            'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
+                                        fontFamily: 'Space Grotesk, sans-serif',
+                                        mb: 2,
+                                    }}
+                                >
+                                    Chat with{' '}
+                                    <Typography color="primary">
+                                        Issue
+                                    </Typography>
+                                </Typography>
+                            </Badge>
                             <Typography
                                 textColor="text.secondary"
                                 level="body-lg"
@@ -202,7 +205,7 @@ export default function FeaturesPage() {
                                 Effortlessly bring GitHub issues into your chat!
                                 Simply right-click on any issue page, choose
                                 "Add to Chat," and the issue is instantly set up
-                                for discussion. 
+                                for discussion.
                             </Typography>
                             <Box>
                                 <List>
@@ -237,17 +240,20 @@ export default function FeaturesPage() {
                                 sx={{
                                     pl: 1,
                                 }}
+                                onClick={() => {
+                                    location.href = '/docs/getting_started'
+                                }}
                                 endDecorator={<CircleChevronRight />}
                             >
-                                Learn More
+                                Start Now
                             </Button>
                         </Stack>
                     </Grid>
                     <Grid xs={12} sm={12} md={6}>
-                            <Player
-                                url="/videos/chat_with_issue.mp4"
-                                light='/img/chat_issue_cover-min.png'
-                            ></Player>
+                        <Player
+                            url="/videos/chat_with_issue.mp4"
+                            light="/img/chat_issue_cover-min.png"
+                        ></Player>
                     </Grid>
                 </Grid>
                 <Grid
@@ -274,34 +280,42 @@ export default function FeaturesPage() {
                                 color="primary"
                                 sx={{ fontSize: 'lg', fontWeight: 'lg' }}
                             >
-                                Reviewing and Understanding Pull Requests Made Easy
+                                Review and Understand Pull Requests with Ease
                             </Typography>
 
-                                <Badge color="warning" variant="solid" badgeContent="beta">
-                            <Typography
-                                level="h3"
-                                sx={{
-                                    fontWeight: 'xl',
-                                    fontSize:
-                                        'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
-                                    fontFamily: 'Space Grotesk, sans-serif',
-                                    mb: 2,
-                                }}
+                            <Badge
+                                color="warning"
+                                variant="solid"
+                                badgeContent="beta"
                             >
-                                Chat with{' '}
-                                <Typography color="primary">Pull Request</Typography>
-                            </Typography>
-                                </Badge>
+                                <Typography
+                                    level="h3"
+                                    sx={{
+                                        fontWeight: 'xl',
+                                        fontSize:
+                                            'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
+                                        fontFamily: 'Space Grotesk, sans-serif',
+                                        mb: 2,
+                                    }}
+                                >
+                                    Chat with{' '}
+                                    <Typography color="primary">
+                                        Pull Request
+                                    </Typography>
+                                </Typography>
+                            </Badge>
                             <Typography
                                 textColor="text.secondary"
                                 level="body-lg"
                                 sx={{ fontSize: 'lg', lineHeight: 'lg' }}
                             >
-                                A Simple Way for Teams to Review and Discuss Code Changes, even if you do not have a programming background. You can still read the pull request
+                                A Simple Way for Teams to Review and Discuss
+                                Code Changes, even if you do not have a
+                                programming background. You can still read the
+                                pull request
                             </Typography>
                             <Box>
                                 <List>
-                                    
                                     <ListItem>
                                         <Typography
                                             startDecorator={
@@ -309,7 +323,8 @@ export default function FeaturesPage() {
                                             }
                                             level="body-md"
                                         >
-                                            Learn about the pull request with natural language
+                                            Learn about the pull request with
+                                            natural language
                                         </Typography>
                                     </ListItem>
                                     <ListItem>
@@ -319,7 +334,8 @@ export default function FeaturesPage() {
                                             }
                                             level="body-md"
                                         >
-                                            Use natural language to review pull requests
+                                            Use natural language to review pull
+                                            requests
                                         </Typography>
                                     </ListItem>
                                 </List>
@@ -330,17 +346,20 @@ export default function FeaturesPage() {
                                 sx={{
                                     pl: 1,
                                 }}
+                                onClick={() => {
+                                    location.href = '/docs/getting_started'
+                                }}
                                 endDecorator={<CircleChevronRight />}
                             >
-                                Learn More
+                                Start Now
                             </Button>
                         </Stack>
                     </Grid>
                     <Grid xs={12} sm={12} md={6}>
-                            <Player
-                                url="/videos/chat_with_pull_request.mp4"
-                                light='/img/chat_with_pull_request-min.png'
-                            ></Player>
+                        <Player
+                            url="/videos/chat_with_pull_request.mp4"
+                            light="/img/chat_with_pull_request-min.png"
+                        ></Player>
                     </Grid>
                 </Grid>
                 <Grid
@@ -367,34 +386,39 @@ export default function FeaturesPage() {
                                 color="primary"
                                 sx={{ fontSize: 'lg', fontWeight: 'lg' }}
                             >
-                                Reviewing and Understanding Patches Made Easy
+                                Review and Understand Code Patches with Ease
                             </Typography>
 
-                                <Badge color="warning" variant="solid" badgeContent="beta">
-                            <Typography
-                                level="h3"
-                                sx={{
-                                    fontWeight: 'xl',
-                                    fontSize:
-                                        'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
-                                    fontFamily: 'Space Grotesk, sans-serif',
-                                    mb: 2,
-                                }}
+                            <Badge
+                                color="warning"
+                                variant="solid"
+                                badgeContent="beta"
                             >
-                                Chat with{' '}
-                                <Typography color="primary">Commit</Typography>
-                            </Typography>
-                                </Badge>
+                                <Typography
+                                    level="h3"
+                                    sx={{
+                                        fontWeight: 'xl',
+                                        fontSize:
+                                            'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
+                                        fontFamily: 'Space Grotesk, sans-serif',
+                                        mb: 2,
+                                    }}
+                                >
+                                    Chat with{' '}
+                                    <Typography color="primary">
+                                        Commit
+                                    </Typography>
+                                </Typography>
+                            </Badge>
                             <Typography
                                 textColor="text.secondary"
                                 level="body-lg"
                                 sx={{ fontSize: 'lg', lineHeight: 'lg' }}
                             >
-                                A Simple Way for Teams to Review and Discuss Code Changes, even if you do not have a programming background. You can still read the pull request
+                                A Simple, Intuitive Way for Teams to Review and Discuss Code Changes—No Programming Experience Required!
                             </Typography>
                             <Box>
                                 <List>
-                                    
                                     <ListItem>
                                         <Typography
                                             startDecorator={
@@ -402,7 +426,8 @@ export default function FeaturesPage() {
                                             }
                                             level="body-md"
                                         >
-                                            Learn about the pull request with natural language
+                                            Learn about the patches with
+                                            natural language
                                         </Typography>
                                     </ListItem>
                                     <ListItem>
@@ -412,7 +437,7 @@ export default function FeaturesPage() {
                                             }
                                             level="body-md"
                                         >
-                                            Use natural language to review pull requests
+                                            Use natural language to review patches
                                         </Typography>
                                     </ListItem>
                                 </List>
@@ -423,20 +448,22 @@ export default function FeaturesPage() {
                                 sx={{
                                     pl: 1,
                                 }}
+                                onClick={() => {
+                                    location.href = '/docs/getting_started'
+                                }}
                                 endDecorator={<CircleChevronRight />}
                             >
-                                Learn More
+                                Start Now
                             </Button>
                         </Stack>
                     </Grid>
                     <Grid xs={12} sm={12} md={6}>
-                            <Player
-                                url="/videos/chat_with_commit.mp4"
-                                light='/img/chat_with_commit-min.png'
-                            ></Player>
+                        <Player
+                            url="/videos/chat_with_commit.mp4"
+                            light="/img/chat_with_commit-min.png"
+                        ></Player>
                     </Grid>
                 </Grid>
-
             </Stack>
         </>
     )
