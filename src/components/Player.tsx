@@ -60,8 +60,10 @@ export default function Player(props: PlayerProps) {
                     onEnded={() => {
                         setPlaying(false)
                         player.current.showPreview()
+                        setIsLoading(false)
                     }}
                     onClickPreview={() => {
+                        setIsLoading(true)
                         setPlaying(true)
                     }}
                     playIcon={<CirclePlay size={64} />}
