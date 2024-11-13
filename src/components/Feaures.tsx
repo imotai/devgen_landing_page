@@ -23,7 +23,8 @@ import {
     CirclePlay,
     Search,
     Lightbulb,
-    PencilRuler
+    PencilRuler,
+    Bug
 } from 'lucide-react'
 import ReactPlayer from 'react-player'
 
@@ -49,7 +50,7 @@ export default function FeaturesPage() {
                         alignItems: 'stretch',
                     })}
                 >
-                    <Grid xs={12} sm={12} md={6}>
+                <Grid xs={12} sm={12} md={6}>
                         <Stack
                             spacing={2}
                             sx={{
@@ -114,6 +115,16 @@ export default function FeaturesPage() {
                                     <ListItem>
                                         <Typography
                                             startDecorator={
+                                                <Bug color="#0B6BCB" />
+                                            }
+                                            level="body-md"
+                                        >
+                                            Using Devgen for Troubleshooting
+                                        </Typography>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Typography
+                                            startDecorator={
                                                 <Lightbulb color="#0B6BCB" />
                                             }
                                             level="body-md"
@@ -157,6 +168,17 @@ export default function FeaturesPage() {
                             ></ReactPlayer>
                         </AspectRatio>
                     </Grid>
+                </Grid>
+                <Grid
+                    container
+                    spacing={2}
+                    sx={(theme) => ({
+                        width: { sx: '100%', md: '60%', lg: '60%' },
+                        mx: 'auto',
+                        alignItems: 'stretch',
+                        mt: 5,
+                    })}
+                >
                     <Grid xs={12} sm={12} md={6}>
                         <Stack
                             spacing={2}
