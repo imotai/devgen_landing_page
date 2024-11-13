@@ -3,9 +3,14 @@ import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Button from '@mui/joy/Button'
 import { FaPlayCircle } from 'react-icons/fa'
-import { Chip, Sheet } from '@mui/joy'
+import { Card, Chip, Sheet } from '@mui/joy'
 import AspectRatio from '@mui/joy/AspectRatio'
-import { CircleChevronRight, Chrome, SquareArrowOutUpRight } from 'lucide-react'
+import {
+    CircleChevronRight,
+    Chrome,
+    SquareArrowOutUpRight,
+    Car,
+} from 'lucide-react'
 
 export default function HeroBanner() {
     const player = React.useRef(null)
@@ -29,9 +34,9 @@ export default function HeroBanner() {
             >
                 <Typography
                     textAlign={'center'}
-                    fontWeight="xl"
-                    fontSize="60px"
                     sx={{
+                        fontWeight: 'xl',
+                        fontSize: 'clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)',
                         fontFamily: 'Space Grotesk, sans-serif',
                     }}
                 >
@@ -51,7 +56,7 @@ export default function HeroBanner() {
                     direction="row"
                     justifyContent="center"
                     spacing={2}
-                    sx={{ mx: 'auto', p: 2, alignItems: 'stretch' }}
+                    sx={{ mx: 'auto', p: 2, alignItems: 'stretch', mt: 2 }}
                 >
                     <Button
                         color="primary"
@@ -85,26 +90,21 @@ export default function HeroBanner() {
                 sx={(theme) => ({
                     width: { xs: '100%', md: '60%', lg: '60%' },
                     mt: 5,
+                    p: 1,
                 })}
                 justifyContent="flex-start"
             >
-                <AspectRatio
-                    ratio="16/10"
-                    sx={{
-                        width: '100%',
-                    }}
-                    variant="plain"
-                >
-                    <Sheet
+                <Card color="neutral" variant="outlined">
+                    <AspectRatio
+                        ratio="16/10"
                         sx={{
-                            backgroundImage: 'url(./img/devgen-mini.webp)',
                             width: '100%',
-                            height: '100%',
-                            backgroundSize: 'cover',
-                            backgroundColor: 'transparent',
+                            borderRadius: 18,
                         }}
-                    ></Sheet>
-                </AspectRatio>
+                    >
+                        <img src="/img/overview-min.jpg" />
+                    </AspectRatio>
+                </Card>
             </Stack>
         </Stack>
     )
