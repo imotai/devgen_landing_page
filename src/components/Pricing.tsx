@@ -274,9 +274,8 @@ export default function PricingPage() {
                             <Divider inset="none" />
                             <CardActions>
                                 <Link
-                                    endDecorator={<KeyboardArrowRight />}
-                                    href="https://tally.so/r/wg4YgJ"
-                                    target="_blank"
+                                    underline='hover'
+                                    href="#tally-open=wg4YgJ&tally-layout=modal&tally-align-left=1&tally-emoji-text=👋&tally-emoji-animation=rubber-band&tally-auto-close=2000"
                                 >
                                     <Typography level="title-lg">
                                         Contact Us for Pricing

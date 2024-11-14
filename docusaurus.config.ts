@@ -34,6 +34,10 @@ const config: Config = {
       async: true,
       'data-token':'6b8137745fbf72f'
     },
+    {
+      src: 'https://tally.so/widgets/embed.js',
+      async: true,
+    },
   ],
 
   presets: [
