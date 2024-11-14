@@ -275,7 +275,7 @@ export default function PricingPage() {
                             <CardActions>
                                 <Link
                                     endDecorator={<KeyboardArrowRight />}
-                                    href="https://zw17d2od59n.typeform.com/to/yYZC8230"
+                                    href="https://tally.so/r/wg4YgJ"
                                     target="_blank"
                                 >
                                     <Typography level="title-lg">
