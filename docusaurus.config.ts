@@ -28,6 +28,13 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+   scripts: [
+    {
+      src: 'https://cdn.seline.so/seline.js',
+      async: true,
+      'data-token':'6b8137745fbf72f'
+    },
+  ],
 
   presets: [
     [
