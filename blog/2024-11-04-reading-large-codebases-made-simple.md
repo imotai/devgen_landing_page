@@ -5,7 +5,7 @@ authors: imotai
 tags: [github, assistant]
 ---
 
-Today, I am excited to officially introduce **Devgen**, a tool designed to simplify code research and make it accessible to everyone. Devgen aims to transform how developers engage with and learn from codebases, offering a streamlined, intuitive way to explore and understand complex code.
+Today, I am excited to officially introduce **Devgen**, a tool designed to simplify codebase research and make it accessible to **everyone**. Devgen aims to transform how developers engage with and learn from codebases, offering a streamlined, intuitive way to explore and understand complex code.
 
 [![download](/img/webstore.png)](https://chromewebstore.google.com/detail/devgen-your-github-ai-ass/iglkjhingcdlfanjlokiodgfcllmcfoc?authuser=0&hl=en)
 
