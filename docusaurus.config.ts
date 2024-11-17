@@ -113,11 +113,11 @@ const config: Config = {
             },
             {
               label: 'Report Bug',
-              href: 'https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=bug&projects=&template=bug_report.md&title=bug%3A',
+              href: 'https://tally.so/r/w2bPdj'
             },
             {
               label: 'Request Feature',
-              href: 'https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=enhancement&projects=&template=feature_request.md&title=feat%3A+',
+              href: 'https://tally.so/r/wMrR2M'
             },
           ],
         },
