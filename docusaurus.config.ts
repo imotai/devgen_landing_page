@@ -28,6 +28,17 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+   scripts: [
+    {
+      src: 'https://cdn.seline.so/seline.js',
+      async: true,
+      'data-token':'6b8137745fbf72f'
+    },
+    {
+      src: 'https://tally.so/widgets/embed.js',
+      async: true,
+    },
+  ],
 
   presets: [
     [
@@ -102,12 +113,16 @@ const config: Config = {
             },
             {
               label: 'Report Bug',
-              href: 'https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=bug&projects=&template=bug_report.md&title=bug%3A',
+              href: 'https://tally.so/r/w2bPdj'
             },
             {
               label: 'Request Feature',
-              href: 'https://github.com/getdevgen/devgen/issues/new?assignees=imotai&labels=enhancement&projects=&template=feature_request.md&title=feat%3A+',
+              href: 'https://tally.so/r/wMrR2M'
             },
+            {
+              label: 'Changelogs',
+              href: '/docs/category/changelogs'
+            }
           ],
         },
         {

@@ -3,9 +3,14 @@ import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Button from '@mui/joy/Button'
 import { FaPlayCircle } from 'react-icons/fa'
-import { Chip, Sheet } from '@mui/joy'
+import { Card, Chip, Sheet } from '@mui/joy'
 import AspectRatio from '@mui/joy/AspectRatio'
-import { CircleChevronRight, Chrome, SquareArrowOutUpRight } from 'lucide-react'
+import {
+    CircleChevronRight,
+    Chrome,
+    SquareArrowOutUpRight,
+    Car,
+} from 'lucide-react'
 
 export default function HeroBanner() {
     const player = React.useRef(null)
@@ -89,16 +94,17 @@ export default function HeroBanner() {
                 })}
                 justifyContent="flex-start"
             >
-                <AspectRatio
-                    ratio="16/10"
-                    sx={{
-                        width: '100%',
-                        borderRadius: 'lg',
-                    }}
-                    variant="plain"
-                >
-                    <img src="/img/overview-min.jpg" />
-                </AspectRatio>
+                <Card color="neutral" variant="outlined">
+                    <AspectRatio
+                        ratio="16/10"
+                        sx={{
+                            width: '100%',
+                            borderRadius: 18,
+                        }}
+                    >
+                        <img src="/img/overview-min.jpg" />
+                    </AspectRatio>
+                </Card>
             </Stack>
         </Stack>
     )

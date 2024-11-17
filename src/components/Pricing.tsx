@@ -243,7 +243,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Self-hosted
+                                        Dedicated Instances/ Self Hosted
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -251,7 +251,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        GitLab Integration
+                                        GitLab/Bitbucket/Azure Repos Integration
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -274,9 +274,8 @@ export default function PricingPage() {
                             <Divider inset="none" />
                             <CardActions>
                                 <Link
-                                    endDecorator={<KeyboardArrowRight />}
-                                    href="https://zw17d2od59n.typeform.com/to/yYZC8230"
-                                    target="_blank"
+                                    underline='hover'
+                                    href="#tally-open=wg4YgJ&tally-layout=modal&tally-align-left=1&tally-emoji-text=👋&tally-emoji-animation=rubber-band&tally-auto-close=2000"
                                 >
                                     <Typography level="title-lg">
                                         Contact Us for Pricing
