@@ -119,6 +119,10 @@ const config: Config = {
               label: 'Request Feature',
               href: 'https://tally.so/r/wMrR2M'
             },
+            {
+              label: 'Changelogs',
+              href: '/docs/category/changelogs'
+            }
           ],
         },
         {
