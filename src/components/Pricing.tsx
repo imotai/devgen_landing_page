@@ -243,7 +243,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        Self-hosted
+                                        Dedicated Instances/ Self Hosted
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -251,7 +251,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        GitLab Integration
+                                        GitLab/Bitbucket/Azure Repos Integration
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
