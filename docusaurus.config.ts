@@ -136,6 +136,7 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/getdevgen/devgen',
             },
+            {label: 'Telegram', href: 'https://t.me/+pc11oJkfy2xjODhh'},
           ],
         },
       ],
