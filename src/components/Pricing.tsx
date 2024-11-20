@@ -85,7 +85,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        2 New Index Requests
+                                        5 New Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
@@ -174,7 +174,7 @@ export default function PricingPage() {
                                         <CheckCircle />
                                     </ListItemDecorator>
                                     <Typography level="body-sm">
-                                        10 New Index Requests
+                                        20 New Index Requests
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
