@@ -3,7 +3,7 @@ import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Button from '@mui/joy/Button'
 import { FaPlayCircle } from 'react-icons/fa'
-import { Card, Chip, Sheet } from '@mui/joy'
+import { Card, Chip, Link, Sheet } from '@mui/joy'
 import AspectRatio from '@mui/joy/AspectRatio'
 import {
     CircleChevronRight,
@@ -84,6 +84,16 @@ export default function HeroBanner() {
                     >
                         Add to Chrome
                     </Button>
+                </Stack>
+                <Stack
+                    direction="row"
+                    justifyContent="center"
+                >
+                    <Link href="/docs/changelogs/v1.1.8">
+                    <Typography level='body-sm'>
+                    🎉 v1.1.8 released
+                    </Typography>
+                    </Link>
                 </Stack>
             </Stack>
             <Stack
